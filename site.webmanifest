@@ -1,12 +1,12 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "4CDragon",
+  "name": "4CDragon.com",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
-    "sizes": "192x192"
+    "sizes": "192x150"
   }],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "http://www.4cdragon.com",
   "background_color": "#fafafa",
   "theme_color": "#fafafa"
 }

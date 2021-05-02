@@ -1,10 +1,10 @@
 {
-  "name": " ",
+  "name": "4CDragon.com",
   "version": "0.0.1",
-  "description": "",
-  "keywords": [""],
+  "description": "四海遊龍 Demo 網站",
+  "keywords": ["四海遊龍 4CDragon 網購"],
   "license": "",
-  "author": "",
+  "author": "Jogger Shyr <jogger@ms1.url.com.tw>",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
