@@ -101,6 +101,15 @@ textarea {
 }
 
 /*
+ * Remove default list style for list
+ */
+.nobullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;;
+ }
+
+/*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
