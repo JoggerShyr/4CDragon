@@ -1,12 +1,13 @@
 {
-  "short_name": "4CDragon",
   "name": "4CDragon.com",
+  "short_name": "4CDragon",
+  "description": "四海遊龍食品股份有限公司創立於民國八十二年，歷經二十多年的努力，為全台最老字號的鍋貼連鎖專賣店。面對市場競爭及嚴苛挑戰，在陳董事長等經營團隊帶領下，不斷地研發、創新與堅持品質，目前中國大陸的上海蘇州地區已有100餘間分店，香港、廣東省、福建省、浙江省等沿海地區亦陸續展店中，已成功將四海遊龍這個台灣品牌推向世界級的舞台，期望能再次締造台灣美食傳奇。",
+  "start_url": ".",
+  "background_color": "#007630",
+  "theme_color": "#007630",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
     "sizes": "192x150"
-  }],
-  "start_url": "http://www.4cdragon.com",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  }]
 }
