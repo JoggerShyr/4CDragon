@@ -1,10 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="zh-tw">
 <head>
+  <meta charset="utf-8">
   <title>四海遊龍 - Home</title>
 
-  <meta charset="utf-8">
-  <meta name="theme-color" content="#007630">
   <meta name="description" content="四海遊龍食品股份有限公司創立於民國八十二年，歷經二十多年的努力，為全台最老字號的鍋貼連鎖專賣店。面對市場競爭及嚴苛挑戰，在陳董事長等經營團隊帶領下，不斷地研發、創新與堅持品質，目前中國大陸的上海蘇州地區已有100餘間分店，香港、廣東省、福建省、浙江省等沿海地區亦陸續展店中，已成功將四海遊龍這個台灣品牌推向世界級的舞台，期望能再次締造台灣美食傳奇。">
 
   <meta property="og:title" content="四海遊龍">
@@ -14,13 +13,16 @@
 
   <link rel="manifest" href="site.webmanifest">
 
+  <!-- Icon -->
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="icon.png" type="image/png">
 
-  <!-- Preload fonts
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#007630">
+
+  <!-- Fonts
   <link rel="preload" as="font" href="fonts/myFont.woff2" type="font/woff2" crossorigin="anonymous">
   -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -28,25 +30,39 @@
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 600px)"
   <link rel="stylesheert" href="css/print.css" media="print">
   -->
+
+  <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+  <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
 </head>
 
 <body>
+    <header>
+      <h1>四海遊龍</h1>
+    </header>
 
-  <!-- Add your site or application content here -->
-  <p>歡迎光臨四海遊龍</p>
-  <script src="js/vendor/modernizr-3.11.7.min.js"></script>
-  <script src="js/app.js"></script>
+    <nav>
+      <ul>
+        <li><a href="#">門市查詢</a></li>
+        <li><a href="#">客服專區</a></li>
+        <li><a href="#">加盟專區</a></li>
+        <li><a href="#">成為夥伴</a></li>
+        <li><a href="#">公益活動</a></li>
+        <li><a href="#">SGS專區</a></li>
+        <li><a href="#">關於我們</a></li>
+      </ul>
+    </nav>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) };
-    ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('set', 'anonymizeIp', true);
-    ga('set', 'transport', 'beacon');
-    ga('send', 'pageview');
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <main>
+      <div class="container">
+        <section class="food-menu">
+          <p>饕家美饌</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>版權所有 &copy; 2021 RYCloud Technoligy. All rights reserved.</footer>
 </body>
 
 </html>
