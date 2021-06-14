@@ -1,27 +1,27 @@
 /*
- ! Device independent CSS
+ ! CSS for general devices (Desktop, Notebook, and mobile)
+ ! CSS flow: General -> Mobile -> phone
  TODO: 
  */
 
-body {
-  width: 90%; max-width: 960px;
-  margin: 0 auto;
-  background-color: #095D2C;
+html {
+ 	font-family: "Noto Sans TC", sans-serif;
+  font-size: initial;
 }
 
-html {
+body {
   box-sizing: border-box;
+  width: 90%; max-width: 960px;
+  margin: 0 auto;
+
+  font: normal;
   color: white;
- 	font-family: "Noto Sans TC", sans-serif;
-  font-size: 1em;
-  /*
-  line-height: 1.2;
-  background: url("../img/background.png");
-  */
+  background-color:#095D2C;
 }
 
 /* banner: center banner */
 header {
+  /* element center */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,6 @@ header {
 
 /* navigation */
 nav {
-  width: 100%;
   background-color: inherit;
 }
 
@@ -64,15 +63,22 @@ nav a:hover {
 
 /* main */
 .subsidery {
-  height: 70vh;
-  width: 100%;
+  margin: .5em auto;
+
+  /* element center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  width: 90%; max-width: 960px;
+
+  /* element center */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  margin: .5em auto;
-}
-
-footer {
-  /*display: initial;*/
+  /* stick buttom */
+  position: fixed; bottom:0;
 }

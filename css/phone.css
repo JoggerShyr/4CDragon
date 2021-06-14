@@ -1,36 +1,41 @@
 /*
  ! CSS for phone device ONLY,
  ! ie. device-width < 576px.
+ ! CSS flow: General -> Mobile -> phone
+ TODO: sticky buttom menu.
  */
-
-body {
-  width: 98vw;
-  margin: 0;
-  background-color: white;
-}
 
 html {
   font-size: .8em;
+}
+
+body {
+  width: 100vw;
+  margin: 0 .5em;
+
   color:black;
+  background-color: white;
 }
 
 /*header {}*/
 
-nav { /* sticky buttom */
-  width: 100vw;
-  background-color: inherit;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100px;
+nav {
+  width: 100%;
+  background-color:#095D2C;
+
+  /* sticky buttom */
+  position:fixed; bottom: 0;
+
+  /* element center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-main {
-  /*display: flex;*/
-}
+/*main {}*/
 
-.subsidery {
-  /*overflow: hidden;*/
-}
+/*.subsidery {}*/
 
-/*footer {}*/
+footer {
+  display: none !important;
+}

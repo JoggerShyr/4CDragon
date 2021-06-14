@@ -1,14 +1,15 @@
 /*
  ! CSS for ALL mobile devices (phone and tablet),
  ! ie. device-width < 768px.
- TODO: sticky banner
+ ! CSS flow: General -> Mobile -> phone
+ TODO: sticky top banner.
  */
-
-body {}
+/*
 html {}
+body {}
 header {}
 nav {}
-
+*/
 /* main */
 
 footer {
