@@ -1,0 +1,16 @@
+/*
+ ! CSS for ALL mobile devices (phone and tablet),
+ ! ie. device-width < 768px.
+ TODO: sticky banner
+ */
+
+body {}
+html {}
+header {}
+nav {}
+
+/* main */
+
+footer {
+  display: none !important;
+}

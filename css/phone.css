@@ -1,0 +1,36 @@
+/*
+ ! CSS for phone device ONLY,
+ ! ie. device-width < 576px.
+ */
+
+body {
+  width: 98vw;
+  margin: 0;
+  background-color: white;
+}
+
+html {
+  font-size: .8em;
+  color:black;
+}
+
+/*header {}*/
+
+nav { /* sticky buttom */
+  width: 100vw;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+}
+
+main {
+  /*display: flex;*/
+}
+
+.subsidery {
+  /*overflow: hidden;*/
+}
+
+/*footer {}*/
