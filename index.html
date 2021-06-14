@@ -17,19 +17,20 @@
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="icon.png" type="image/png">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#007630">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#095D2C">
 
-  <!-- Fonts
-  <link rel="preload" as="font" href="fonts/myFont.woff2" type="font/woff2" crossorigin="anonymous">
-  -->
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/utils.css">
   <link rel="stylesheet" href="css/style.css">
-  <!--
-  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 600px)"
-  <link rel="stylesheert" href="css/print.css" media="print">
-  -->
+  <link rel="stylesheet" href="css/phone.css" media="screen and (max-width: 576px)">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 577px) and (max-width: 768)">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="css/print.css" media="print">
 
   <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
   <!--[if lt IE 9]>
@@ -38,30 +39,84 @@
 </head>
 
 <body>
+    <!--banner-->
     <header>
-      <h1>四海遊龍</h1>
+      <picture>
+        <source srcset="img/top-480x65.jpg" media="(max-width:576px)">
+        <source srcset="img/top-576x78.jpg" media="(max-width:768px)">
+        <img src="img/top-960x130.jpg">
+      </picture>
     </header>
 
+    <!--menu-->
     <nav>
+      <!--TODO 首頁 夥伴 商品 客服 門市-->
       <ul>
-        <li><a href="#">門市查詢</a></li>
-        <li><a href="#">客服專區</a></li>
-        <li><a href="#">加盟專區</a></li>
-        <li><a href="#">成為夥伴</a></li>
-        <li><a href="#">公益活動</a></li>
-        <li><a href="#">SGS專區</a></li>
         <li><a href="#">關於我們</a></li>
-      </ul>
+        <!-- 最新消息 -->
+        <!-- 成為夥伴 -->
+        <!-- 公益活動 -->
+        <!-- SGS專區 -->
+        <li><a href="#">加盟專區</a></li>
+        <li><a href="#">饕客美食</a></li>
+        <li><a href="#">客服專區</a></li>
+        <li><a href="#">門市查詢</a></li>
+      <ul>
     </nav>
 
     <main>
-      <div class="container">
-        <section class="food-menu">
-          <p>饕家美饌</p>
-        </section>
-      </div>
+      <section id="about_us" hidden>
+        <h1>about us</h1>
+        <div><p>paragraph</p></div>
+        <div><p>paragraph</p></div>
+        <div><p>paragraph</p></div>
+        <div><p>paragraph</p></div>
+        <div><p>paragraph</p></div>
+        <div><p>paragraph</p></div>
+      </section>
+
+      <section id="companion" hidden>
+        <h1>加盟專區</h1>
+        <div>
+          <p>Paragraph One</p>
+          <p>Paragraph Two</p>
+          <p>Paragraph Three</p>
+        </div>
+      </section>
+
+      <section id="products" hidden>
+        <h1>饕客美食</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+
+      <section id="customer" hidden>
+        <h1>服專區</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+
+      <section id="subsidery">
+        <h1>門市查詢</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d932202.0083371049!2d120.97960199844032!3d24.122091571964276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zIuWbm-a1t-mBium-jSI!5e0!3m2!1sen!2stw!4v1623470744886!5m2!1sen!2stw" width="95%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <p>End</p>
+      </section>
     </main>
 
+    <!-- Copyright and contact information -->
     <footer>版權所有 &copy; 2021 RYCloud Technoligy. All rights reserved.</footer>
 </body>
 
