@@ -22,3 +22,7 @@ Website Plan
    6. Website search.
    7. On-line special & flash offer
 4. Group your website content and draw sitemap.
+
+Memo:
+1. 開發考量, 先從 Desktop 版開始, 再來開發 Mobile 及 Phone.
+2. 
