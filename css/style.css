@@ -35,7 +35,6 @@ nav {
 nav ul {
   display: block;
   margin: 0 auto;
-  width: auto;
   text-align: center;
   list-style: none;
   border-bottom: 3px dotted rgb(83, 147, 113, 1);
@@ -62,6 +61,7 @@ nav a:hover {
 }
 
 /* main */
+
 .subsidery {
   margin: .5em auto;
 
@@ -74,11 +74,11 @@ nav a:hover {
 footer {
   width: 90%; max-width: 960px;
 
+  /* sticky buttom */
+  position: fixed; bottom:0;
+
   /* element center */
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* stick buttom */
-  position: fixed; bottom:0;
 }
