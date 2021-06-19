@@ -1,0 +1,23 @@
+/*
+ * CSS library
+ ! Do Not <link> this css, just copy & paste.
+ */
+
+html { /* scroll webpage smooth */
+  scroll-behavior: smooth;
+}
+
+body { /* custom cursor */
+  cursor: url("img/cursor.png"), auto;
+}
+
+img { /* Resize images to fit */
+  max-width: 100%;
+  height: auto;
+}
+
+.center { /* center child element, use in container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
