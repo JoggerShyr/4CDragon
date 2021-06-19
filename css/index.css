@@ -13,7 +13,11 @@ body {
   margin: 0 auto;
   font: normal;
   color: black;
-  background: #f8f8f8;
+  background: #fbfbfb;
+}
+
+.banner {
+  margin-bottom: 0;
 }
 
 .banner img {
@@ -21,5 +25,67 @@ body {
   height: auto;
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar nav {
+  display: none;
+  background: #095d2c;
+  color: white;
+}
+
+.navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  margin: -0.2em 0 0 -2.4em;
+}
+
+.navbar nav ul li {
+  padding: 0.5em;
+}
+
+.navbar nav ul a,
+.navbar nav ul a:hover {
+  text-decoration: none;
+}
+
+.navbar nav ul a,
+.navbar nav ul a:visited {
+  color: white;
+}
+
+.mobile-menu {
+  cursor: pointer;
+  float: right;
+}
+
+.mobile-menu-exit {
+  cursor: pointer;
+  float: right;
+}
+
+@media only screen and (min-width: 480px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
 }
 /*# sourceMappingURL=index.css.map */
