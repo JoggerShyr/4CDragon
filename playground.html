@@ -5,10 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML & CSS Playground</title>
-  <!-- font -->
-  <!-- CSS -->
+
+  <style>
+    .child {
+      padding: 100px 22px;
+      margin: 3px;
+      border: 1px solid green;
+    }
+  </style>
 </head>
 <body>
-
+  <div style="display: flex; justify-content: center; border: 1px solid red; max-width: fit-content;">
+    <span class="child">Hello World 1!</span>
+    <div class="child">Hello World 2!</div>
+    <span class="child">Hello World 3!</span>
+  </div>
 </body>
 </html>
