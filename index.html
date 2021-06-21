@@ -55,32 +55,6 @@
     </div>
   </div>
 
-  <section id="welcome">
-    <div class="slideShow">
-      <div class="Slides">
-        <img src="" alt="" style="width: 100%">
-      </div>
-
-      <div class="Slides">
-        <iframe width="95%" height="auto" src="https://www.youtube.com/embed/apcuSCWVEKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <div class="Slides">
-        <img src="" alt="" style="width: 100%">
-      </div>
-
-      <a onclick="slideMove(-1)" class="prev">&#10094;</a>
-      <a onclick="slideMove(1)" class="next">&#10095;</a>
-
-      <div style="text-align: center;">
-        <span class="dot" onclick="showSlide(1)"></span>
-        <span class="dot" onclick="showSlide(2)"></span>
-        <span class="dot" onclick="showSlide(3)"></span>
-      </div>
-
-    </div>
-  </section>
-
   <script>
     const nav = document.querySelector("nav"),
       mobileBtn = document.getElementById("openMenu"),
@@ -93,6 +67,106 @@
     mobileBtnExit.addEventListener("click", () => {
       nav.classList.remove("menu-btn");
     });
+  </script>
+
+  <section id="welcome">
+    <!-- slides -->
+    <div class="slideShow">
+      <div class="slide fade">
+        <picture>
+          <source srcset="img/slide-image-1-480x161.jpg" media="(max-width: 480px)">
+          <img src="img/slide-image-1-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
+        </picture>
+      </div>
+
+      <div class="slide fade">
+        <picture>
+          <source srcset="img/slide-image-2-480x161.jpg" media="(max-width: 480px)">
+          <img src="img/slide-image-2-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
+        </picture>
+      </div>
+
+      <div class="slide fade">
+        <picture>
+          <source srcset="img/slide-image-3-480x161.jpg" media="(max-width: 480px)">
+          <img src="img/slide-image-3-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
+        </picture>
+      </div>
+
+      <div class="slide fade">
+        <picture>
+          <source srcset="img/slide-image-4-480x161.jpg" media="(max-width: 480px)">
+          <img src="img/slide-image-4-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
+        </picture>
+      </div>
+
+      <div class="slide fade">
+        <picture>
+          <source srcset="img/slide-image-5-480x161.jpg" media="(max-width: 480px)">
+          <img src="img/slide-image-5-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
+        </picture>
+      </div>
+
+      <div class="slide fade">
+        <picture>
+          <source srcset="img/slide-image-6-480x161.jpg" media="(max-width: 480px)">
+          <img src="img/slide-image-6-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
+        </picture>
+      </div>
+
+      <div class="slide fade">
+        <picture>
+          <source srcset="img/slide-image-7-480x161.jpg" media="(max-width: 480px)">
+          <img src="img/slide-image-7-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
+        </picture>
+      </div>
+
+      <!-- prev & next -->
+      <a class="prev" onclick="slideMove(-1)">&#10094;</a>
+      <a class="next" onclick="slideMove(1)">&#10095;</a>
+
+    </div>
+
+    <!-- dots
+    <div style="text-align: center;">
+      <span class="dot" onclick="goSlide(1)"></span>
+      <span class="dot" onclick="goSlide(2)"></span>
+    </div>
+    -->
+  </section>
+
+  <script>
+    var slideIndex = 1;
+
+    showSlide(slideIndex);
+
+    function slideMove(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function goSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+    function nextSlide() {
+      showSlide(slideIndex += 1);
+    }
+
+    function showSlide(n) {
+      var i,
+          slides = document.getElementsByClassName("slide");
+
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+
+      setTimeout(nextSlide, 3000);
+    }
   </script>
 </body>
 </html>
