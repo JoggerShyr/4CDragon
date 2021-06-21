@@ -30,7 +30,7 @@
   <![endif]-->
 </head>
 
-<body>
+<>
   <div class="banner">
     <picture>
       <source srcset="img/top-480x65.jpg" media="(max-width: 480px)">
@@ -55,6 +55,32 @@
       </nav>
     </div>
   </div>
+
+  <section class="welcome">
+    <div class="slideShow">
+      <div class="Slides">
+        <img src="" alt="" style="width: 100%">
+      </div>
+
+      <div class="Slides">
+        <iframe width="95%" height="auto" src="https://www.youtube.com/embed/apcuSCWVEKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="Slides">
+        <img src="" alt="" style="width: 100%">
+      </div>
+
+      <a onclick="slideMove(-1)" class="prev">&#10094;</a>
+      <a onclick="slideMove(1)" class="next">&#10095;</a>
+
+      <div style="text-align: center;">
+        <span class="dot" onclick="showSlide(1)"></span>
+        <span class="dot" onclick="showSlide(2)"></span>
+        <span class="dot" onclick="showSlide(3)"></span>
+      </div>
+
+    </div>
+  </section>
 
   <script>
     const nav = document.querySelector("nav"),
