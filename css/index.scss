@@ -68,7 +68,7 @@ nav {
   top: 0;
   z-index: 99;
 
-  width: fit-content;
+  width: 100%; //width: fit-content;
   height: fit-content; //height: 100vh;
   background-color: $primary-color;
   //margin: 0; padding: 0;
@@ -85,7 +85,8 @@ nav {
     align-items: center;
     justify-content: center;
 
-    margin: 3.5em; padding: 0;
+    margin: 3.5em 0 0 0.5em;
+    padding: 0;
     list-style-type: none;
 
     li { width: 100%; }
