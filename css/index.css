@@ -224,3 +224,22 @@ nav ul a:hover {
     opacity: 1;
   }
 }
+
+footer {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 960px;
+    line-height: 0;
+    color: white;
+    background-color: #095d2c;
+    text-align: center;
+    font-weight: 100;
+  }
+}

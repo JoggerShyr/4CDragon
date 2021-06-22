@@ -35,7 +35,7 @@
       <source srcset="img/top-480x65.jpg" media="(max-width: 480px)">
       <source srcset="img/top-576x78.jpg" media="(max-width: 576px)">
       <source srcset="img/top-768x104.jpg" media="(max-width: 768px)">
-      <img src="img/top-960x130.jpg" style="width: 100%; height: auto; object-fit: fill;">
+      <img src="img/top-960x130.jpg" style="width: 100%; height: auto; object-fit: fill;" onclick="displaySection(0)">
     </picture>
   </div>
 
@@ -45,11 +45,11 @@
       <nav>
         <img id="closeMenu" src="img/exit.svg" alt="Exit" class="mobile-menu-exit">
         <ul>
-          <li><a href="#about">關於我們</a></li>
-          <li><a href="#partner">成為夥伴</a></li>
-          <li><a href="#products">饕家美饌</a></li>
-          <li><a href="#subsidery">門市查詢</a></li>
-          <li><a href="#customer">客服專區</a></li>
+          <li><a href="#about" onclick="displaySection(1)">關於我們</a></li>
+          <li><a href="#partner" onclick="displaySection(2)">成為夥伴</a></li>
+          <li><a href="#products" onclick="displaySection(3)">饕家美饌</a></li>
+          <li><a href="#subsidery" onclick="displaySection(4)">門市查詢</a></li>
+          <li><a href="#customer" onclick="displaySection(5)">客服專區</a></li>
         </ul>
       </nav>
     </div>
@@ -189,8 +189,20 @@
     <h1>客服專區</h1>
   </section>
 
-  <footer>
+  <script>
+    var sections = document.getElementsByTagName("section");
 
+    displaySection(0);
+
+    function displaySection(n) {
+      for (i = 0; i < sections.length; i++) {
+        sections[i].style.display = (n == i) ? "block" : "none";
+      }
+    }
+  </script>
+
+  <footer>
+    <p>Copyright &copy;<script>document.write(new Date().getFullYear())</script> RYCloud Technology Corp. All Rights Reserved.</p>
   </footer>
 </body>
 </html>

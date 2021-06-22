@@ -206,5 +206,25 @@ nav {
 }
 
 // !
-// ! about
+// ! .about
 // !
+
+//!
+//! footer
+//!
+footer {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  footer {
+    display: block;
+    position: fixed; bottom: 0;
+    width: 100%; max-width: 960px;
+    line-height: 0;
+    color: white;
+    background-color: $primary-color;
+    text-align: center;
+    font-weight: 100;
+  }
+}
