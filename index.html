@@ -156,8 +156,8 @@
       var i,
           slides = document.getElementsByClassName("slide");
 
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
+      slideIndex = (n > slides.length) ? 1 : slideIndex;
+      slideIndex = (n < 1) ? slides.length : slideIndex;
 
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -168,5 +168,29 @@
       setTimeout(nextSlide, 3000);
     }
   </script>
+
+  <section id="about">
+    <h1>關於我們</h1>
+  </section>
+  
+  <section id="partner">
+    <h1>成為夥伴</h1>
+  </section>
+
+  <section id="products">
+    <h1>饕家美食</h1>
+  </section>
+
+  <section id="subsidery">
+    <h1>門市查詢</h1>
+  </section>
+
+  <section id="customer">
+    <h1>客服專區</h1>
+  </section>
+
+  <footer>
+
+  </footer>
 </body>
 </html>

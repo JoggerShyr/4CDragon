@@ -4,6 +4,7 @@
 // color
 $primary-color: #095d2c;
 
+// baseline
 html {
   font-family: "Noto Sans TC", sans-serif;
   font-size: initial;
@@ -12,14 +13,14 @@ html {
 
 body {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 960px;
   margin: 0 auto;
-  font: normal;
+  width: 100%; max-width: 960px;
   color: black;
   background: #fbfbfb;
+  font: normal;
 }
 
+// utility
 a,
 a:hover,
 a:visited {
@@ -30,13 +31,15 @@ a:visited {
 // ! .banner
 // !
 .banner {
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 // !
 // ! .navbar
 // !
 .navbar {
+  margin: 0; padding: 0;
   .container {
     display: flex;
   }
@@ -63,11 +66,12 @@ nav {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 999;
+  z-index: 99;
 
   width: fit-content;
-  height: 100vh;
-  background: $primary-color;
+  height: fit-content; //height: 100vh;
+  background-color: $primary-color;
+  //margin: 0; padding: 0;
 
   .mobile-menu-exit {
     float: right;
@@ -81,18 +85,17 @@ nav {
     align-items: center;
     justify-content: center;
 
-    margin: 3.5em;
-    padding: 0;
+    margin: 3.5em; padding: 0;
     list-style-type: none;
 
-    //li { width: 100%; }
+    li { width: 100%; }
 
     a {
       display: block;
       text-align: center;
       color: white;
       transition: 1s ease-in-out;
-      padding: 0.2em 0.5em;
+      margin: 0; padding: 0.5em auto;
 
       &:hover {
         color: black;
@@ -116,7 +119,7 @@ nav {
 
     width: 100%;
     height: auto;
-    margin: -4px auto 0 auto;
+    margin: -5px auto 0 auto;
 
     ul {
       display: flex;
@@ -135,13 +138,14 @@ nav {
 // ! #welcome
 // !
 .slideShow {
-  max-width: 960px;
-  margin: auto;
   position: relative;
+
+  width: 100%; max-width: 960px;
+  margin: auto;
 }
 
 .slide {
-  display: none; // ! hide slides by default
+  display: none; // ! hide all slide by default
 }
 
 .prev, .next {
@@ -151,9 +155,9 @@ nav {
   margin-top: -22px;
   padding: 16px;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.2em;
-  transition: 0.6s ease;
+  transition: 0.5s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   cursor: pointer;
@@ -165,7 +169,7 @@ nav {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .dot {
@@ -185,9 +189,9 @@ nav {
 }
 
 .fade {
-  -webkit-animation-name: fade;
+  -webkit-animation-name: slide;
   -webkit-animation-duration: 1.5s;
-  animation-name: fade;
+  animation-name: slide;
   animation-duration: 1.5s;
 }
 
@@ -200,3 +204,7 @@ nav {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+// !
+// ! about
+// !
