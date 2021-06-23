@@ -92,6 +92,7 @@ nav ul {
 }
 
 nav ul li {
+  display: inline-block;
   width: 100%;
 }
 
