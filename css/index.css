@@ -22,6 +22,10 @@ a:visited {
   text-decoration: none;
 }
 
+section {
+  margin: auto;
+}
+
 .banner {
   margin: 0;
   padding: 0;
@@ -155,7 +159,8 @@ nav ul a:hover {
   display: none;
 }
 
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   width: auto;
@@ -179,7 +184,8 @@ nav ul a:hover {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -195,7 +201,8 @@ nav ul a:hover {
   cursor: pointer;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -208,7 +215,7 @@ nav ul a:hover {
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -217,10 +224,75 @@ nav ul a:hover {
 
 @keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
+  }
+}
+
+#about .container .index {
+  padding: 3px 10px;
+  background: url("../img/menu-left-background.png");
+  background-size: cover;
+}
+
+#about .container .index .indexHead {
+  height: 82px;
+  font-size: xx-large;
+  display: table-cell;
+  vertical-align: bottom;
+  border-bottom: 2px solid #095d2c;
+}
+
+#about .container .index ul {
+  padding: 0;
+  list-style: none;
+}
+
+#about .container .index ul a {
+  color: white;
+}
+
+#about .container .index ul li {
+  position: relative;
+  text-align: center;
+}
+
+#about .container .index ul li span {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+}
+
+#about .container .content {
+  margin: 1em 1.5em;
+}
+
+#about .container .content .contentHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #095d2c;
+}
+
+#about .container .content .contentHead h2 {
+  margin-left: 1em;
+}
+
+@media only screen and (min-width: 480px) {
+  #about .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #about .container .index {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    padding: 1em 1.5em;
   }
 }
 
