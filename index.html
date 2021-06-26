@@ -175,19 +175,19 @@
         <div class="indexHead">關於我們</div>
         <ul class="indexBody">
           <li>
-            <a href="#introduction">
+            <a href="#introduction" onclick="showAbout(0)">
               <img src="img/button_before-160x43.png">
               <span>企業簡介</span>
             </a>
           </li>
           <li>
-            <a href="#philosophy">
+            <a href="#philosophy" onclick="showAbout(1)">
               <img src="img/button_before-160x43.png">
               <span>經營理念</span>
             </a>
           </li>
           <li>
-            <a href="#raw_material">
+            <a href="#raw_material" onclick="showAbout(2)">
               <img src="img/button_before-160x43.png">
               <span>原料採用</span>
             </a>
@@ -279,22 +279,295 @@
     </dev>
 
   </section>
-  
+ 
+  <script>
+    var aboutContents = document.getElementById("about").getElementsByClassName("content");
+
+    showAbout(0);
+
+    function showAbout(n) {
+      for (i = 0; i < aboutContents.length; i++) {
+        aboutContents[i].style.display = (n == i) ? "block" : "none";
+      }
+    }
+
+  </script>
+
   <section id="partner">
-    <h1>成為夥伴</h1>
+    <div class="container">
+      <div class="index">
+        <div class="indexHead">成為夥伴</div>
+        <ul class="indexBody">
+          <li>
+            <a href="#join" onclick="showPartner(0)">
+              <img src="img/button_before-160x43.png">
+              <span>加盟辦法</span>
+            </a>
+          </li>
+          <li>
+            <a href="#franchise" onclick="showPartner(1)">
+              <img src="img/button_before-160x43.png">
+              <span>加盟金額</span>
+            </a>
+          </li>
+          <li>
+            <a href="#concerns" onclick="showPartner(2)">
+              <img src="img/button_before-160x43.png">
+              <span>加盟事宜</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.518.com.tw/company-G7M4p1.html" target="_blank">
+              <img src="img/button_before-160x43.png">
+              <span>求職辦法</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contents">
+        <div id="join" class="content">
+          <div class="contentHead">
+            <img src="img/about_yuloong.png">
+            <h2>加盟辦法</h2>
+          </div>
+          <div class="contentBody">
+            <div class="shop_pictures" style="display: flex; margin: 2em auto;">
+              <img src="img/shop_01.png" style="margin: 0 .5em;">
+              <img src="img/shop_02.png" style="margin: 0 .5em;">
+              <img src="img/shop_03.png" style="margin: 0 .5em;">
+              <img src="img/shop_04.png" style="margin: 0 .5em;">
+            </div>
+            <ul>
+              <li>加盟地區：全省</li>
+              <li>店面坪數：不拘</li>
+              <li>商圈保證：同商圈內無四海遊龍，且店面須經公司核定不影響其他門店</li>
+              <li>契約期間：三年，第四年起視營運狀況改為一年一簽</li>
+              <li>加盟經營：須專職經營 (夫妻倆共同創業為佳)</li>
+              <li>資金準備：標準約180~200萬</li>
+            </ul>
+
+            <p>創業專線：0800-55-88-48</p>
+
+            <h2>Yuloong Franchise Requirements</h2>
+            <ul>
+              <li>Franchise Area: all areas in the province</li>
+              <li>Dimension of the store: No requirements</li>
+              <li>Business Guarantee: No Yuloong store in the same business community, and it should also pass our assessment, making no interruption to other stores.</li>
+              <li>Contract time: 3 years (From the fourth year onwards, signing of the annual contract is done according to its operation status)</li>
+              <li>Franchise operation: Full time work (a couple running the business is preferred)</li>
+              <li>Capital Needed: about 1,800,000~2,000,000</li>
+
+              <p>Hotline for New Business:0800-55-88-48</p>
+            </ul>
+          </div>
+        </div>
+        <div id="franchise" class="content">
+          <div class="contentHead">
+            <img src="img/about_yuloong.png">
+            <h2>加盟金額</h2>
+          </div>
+          <div class="contentBody">
+
+            <h2>創業準備金約200萬元起(視承租店面而定)</h2>
+            <ul>
+              <li>加盟金：10萬元</li>
+              <li>保證金：20萬元</li>
+              <li>裝潢、硬體設施、機器設備 : 150~180萬元</li>
+              <li>人力支援：總公司提供人員到店輔導營運、人力支援</li>
+              <li>以上不含：房屋押金、押金、周轉金、5%營業稅</li>
+            </ul>
+
+            <h2>Capital Requirement</h2>
+            <ul>
+              <li>Franchise Fee: 100,000</li>
+              <li>Cash Deposit: 200,000</li>
+              <li>Money for decoration, hardware and machines: 1,500,000~1,800,000</li>
+              <li>Personnel support: Headquarters will provide personnel for new branches to help with the construction and human resources management.
+              <p>All items above don't include residence cash pledge, cash pledge, working fund and 5% of business tax.</p>
+              </li>
+              <li>Amount required: about 2,000,000 and over (depending on the size of the store)</li>
+            </ul>
+
+          </div>
+        </div>
+        <div id="concerns" class="content">
+          <div class="contentHead">
+            <img src="img/about_yuloong.png">
+            <h2>加盟事宜</h2>
+          </div>
+          <div class="contentBody">
+            <ul>
+              <li>
+                <h2>加盟流程</h2>
+                <img src="img/join-flow.png">
+              </li>
+              <li>
+                <h2>加盟相關事宜</h2>
+                <ul>
+                  <li>訓練：依訓練時數及公司考核結果而定</li>
+                  <li>裝潢：21天完工(工作天)</li>
+                </ul>
+              </li>
+              <li>
+                <h2>Franchise concerns</h2>
+                <ul>
+                  <li>Training: according to training hours and the company assessment</li>
+                  <li>Decoration: completed in 21 days (working day)</li>
+                </ul>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <script>
+    var partnerContents = document.getElementById("partner").getElementsByClassName("content");
+
+    showPartner(0);
+
+    function showPartner(n) {
+      for (i = 0; i < partnerContents.length; i++) {
+        partnerContents[i].style.display = (n == i) ? "block" : "none";
+      }
+    }
+  </script>
 
   <section id="products">
     <h1>饕家美食</h1>
   </section>
 
   <section id="subsidery">
-    <h1>門市查詢</h1>
+    <h1 style="border-bottom: 2px solid black;">門市查詢</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29233.771145557796!2d120.2914441!3d23.6680394!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stw!4v1624717859385!5m2!1sen!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
   <section id="customer">
-    <h1>客服專區</h1>
+    <div class="container">
+      <div class="index">
+        <div class="indexHead">客服專區</div>
+        <ul class="indexBody">
+          <li>
+            <a href="#joinFaq" onclick="showCustomer(0)">
+              <img src="img/button_before-160x43.png">
+              <span>加盟 FAQ</span>
+            </a>
+          </li>
+          <li>
+            <a href="#foodFaq" onclick="showCustomer(1)">
+              <img src="img/button_before-160x43.png">
+              <span>食材 FAQ</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onclick="showCustomer(2)">
+              <img src="img/button_before-160x43.png">
+              <span>客服專線</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contents">
+        <div id="joinFaq" class="content">
+          <div class="contentHead">
+            <img src="img/about_yuloong.png">
+            <h2>加盟 FAQ</h2>
+          </div>
+          <div class="contentBody">
+            <details>
+              <summary>如何才能加盟四海遊龍鍋貼專賣店呢？</summary>
+              <p>加盟流程</p>
+              <ol>
+                <li>資格審核。</li>
+                <li>雙方拜訪約談：加盟契約、規章說明...雙方充份溝通加盟觀念。</li>
+                <li>閱讀了解加盟契約、規章 。</li>
+                <li>商圈立地調查評估、商圈經營保障。</li>
+                <li>簽訂加盟契約。</li>
+                <li>教育訓練、人員招募。</li>
+                <li>招開工程協調會，設計發包。</li>
+                <li>店面實習。</li>
+                <li>開店籌備會、員工結業核定、開店準備。</li>
+                <li>營業開始。</li>
+                <li>i專員到店面協助及輔導。</li>
+              </ol>
+              <p>或電洽加盟專線0800-22-44-66</p>
+            </details>
+            <details>
+              <summary>沒有做飲食經驗可以加盟四海游龍嗎？公司會幫忙找店面嗎？</summary>
+              <p>王先生您好～<br>不論有沒有餐飲經驗，都竭誠歡迎您加入我們四海遊龍鍋貼專賣店有20年的歷史有豐富的經營管理經驗，能提供加盟者最大的協助另提及公司是否會幫忙找店面本公司有專人專職協尋店面，請您放心</p>
+            </details>
+            <details>
+              <summary>有開放對外加盟嗎?還是只有員工可以加盟呢？</summary>
+              <p>KEN您好～<br>本公司近期已開放對外加盟如您有意願加盟請您直接撥打免付費專線 0800-22-44-66 本公司將有專人與您連絡</p>
+            </details>
+            <details>
+              <summary>請問加拿大可以加盟嗎？</summary>
+              <p>Josephine 您好!<br>目前本公司僅開放台灣加盟其他地區尚未進駐, 如您有意願加盟歡迎電洽加盟客服專線 0800-22-44-66 我們有專人為您服務，謝謝您的支持.</p>
+            </details>
+            <details>
+              <summary>我住新竹市我想加盟</summary>
+              <p>王先生您好～<br>歡迎電洽加盟客服專線 0800-22-44-66 我們有專人為您服務，謝謝您的支持.</p>
+            </details>
+            <details>
+              <summary>上週已e-mail過去了，新竹市可有地點可加盟，加盟細節？</summary>
+              <p>溫小姐您好~非常感激您的來信<br>新竹地區目前仍可加盟為解答您的疑問及加速作業時間, 請您來信留下您的聯絡方式或撥打客服專線 0800-22-44-66 我們有專人為您服務, 再次謝謝您的來信.</p>
+            </details>
+            <details>
+              <summary>您好~~我有意願加盟，想了解加盟細節</summary>
+              <p>張小姐/先生您好~<br>謝謝您對本公司的支持, 有關加盟細節請撥打免費專線 0800-22-44-66 將有專人為您解說.</p>
+            </details>
+            <details>
+              <summary>我想在新竹縣竹北市加盟可以嗎？</summary>
+              <p>吳先生您好~非常感激您的來信<br>新竹地區目前仍可加盟, 為解答您的疑問及加速作業時間, 請您來信留下您的聯絡方式或撥打加盟專線 0972202966 我們有專人為您服務, 再次謝謝您的來信.</p>
+            </details>
+            <details>
+              <summary>您好！有對你們的產品蠻有興趣的，想要多了解您們一些加盟資訊!</summary>
+              <p>郭先生您好~非常感激您的來信<br>感謝您對本公司各項產品的支持, 有關加盟資訊可參考本網址 http://www.0800224466.com/ 或請撥打 0972202966 我們將有專人為您服務, 再次謝謝您的來信.</p>
+            </details>
+            <details>
+              <summary>我想在彰化市彰商彰中之間開加盟店可以嗎？</summary>
+              <p>黃先生您好~<br>四海遊龍鍋貼專賣店在彰化縣市目前僅五間分店, 您提及的區域只要對現有營業據點的影響不大, 我們都很歡迎您加入我們.</p>
+            </details>
+          </div>
+        </div>
+        <div id="foodFaq" class="content">
+          <div class="contentHead">
+            <img src="img/about_yuloong.png">
+            <h2>食材 FAQ</h2>
+          </div>
+          <div class="contentBody">
+            <details>
+              <summary>你們的鍋貼和水餃包的肉都乾淨衛生嗎？</summary>
+              <p>非常感謝您來信對本公司之指教。<br>本公司肉品長期以來皆委由香里食品企業提供（通過農委會CAS優良食品及HACCP兩項認證）每天每日生產，每日配送（全程低溫保鮮）請您安心食用。</p>
+            </details>
+          </div>
+        </div>
+        <div id="contact" class="content">
+          <div class="contentHead">
+            <img src="img/about_yuloong.png">
+            <h2>客服專線</h2>
+          </div>
+          <div class="contentBody">
+            <h2>客服專線請您撥打</h2>
+            <h1>0800-22-44-66</h1>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <script>
+    var customerContents = document.getElementById("customer").getElementsByClassName("content");
+
+    showCustomer(0);
+
+    function showCustomer(n) {
+      for (i = 0; i < customerContents.length; i++) {
+        customerContents[i].style.display = (n == i) ? "block" : "none";
+      }
+    }
+  </script>
 
   <script>
     var sections = document.getElementsByTagName("section");

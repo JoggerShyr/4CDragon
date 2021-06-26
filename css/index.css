@@ -26,6 +26,10 @@ section {
   margin: auto;
 }
 
+summary {
+  cursor: pointer;
+}
+
 .banner {
   margin: 0;
   padding: 0;
@@ -231,7 +235,7 @@ nav ul a:hover {
   }
 }
 
-#about .container .index {
+.container .index {
   padding: 3px 10px;
   background: url("../img/menu-left-background.png");
   background-size: cover;
@@ -240,7 +244,7 @@ nav ul a:hover {
   text-align: -moz-right;
 }
 
-#about .container .index .indexHead {
+.container .index .indexHead {
   height: 82px;
   font-size: xx-large;
   display: table-cell;
@@ -248,21 +252,21 @@ nav ul a:hover {
   border-bottom: 2px solid #095d2c;
 }
 
-#about .container .index ul {
+.container .index ul {
   padding: 0;
   list-style: none;
 }
 
-#about .container .index ul a {
+.container .index ul a {
   color: white;
 }
 
-#about .container .index ul li {
+.container .index ul li {
   position: relative;
   text-align: center;
 }
 
-#about .container .index ul li span {
+.container .index ul li span {
   position: absolute;
   top: 50%;
   left: 55%;
@@ -270,28 +274,28 @@ nav ul a:hover {
           transform: translate(-40%, -50%);
 }
 
-#about .container .content {
+.container .content {
   margin: 1em 1.5em;
 }
 
-#about .container .content .contentHead {
+.container .content .contentHead {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid #095d2c;
 }
 
-#about .container .content .contentHead h2 {
+.container .content .contentHead h2 {
   margin-left: 1em;
 }
 
 @media only screen and (min-width: 480px) {
-  #about .container {
+  .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #about .container .index {
+  .container .index {
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;

@@ -33,6 +33,9 @@ section {
   margin: auto;
 }
 
+summary {
+  cursor: pointer;
+}
 // !
 // ! .banner
 // !
@@ -230,9 +233,9 @@ nav {
 }
 
 // !
-// ! .about
+// ! .container
 // !
-#about .container {
+.container {
   .index {
     padding: 3px 10px;
     background: url("../img/menu-left-background.png");
@@ -285,7 +288,7 @@ nav {
 }
 
 @media only screen and (min-width: 480px) {
-  #about .container {
+  .container {
     display: flex;
 
     .index {
