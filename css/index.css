@@ -235,6 +235,9 @@ nav ul a:hover {
   padding: 3px 10px;
   background: url("../img/menu-left-background.png");
   background-size: cover;
+  text-align: right;
+  text-align: -webkit-right;
+  text-align: -moz-right;
 }
 
 #about .container .index .indexHead {

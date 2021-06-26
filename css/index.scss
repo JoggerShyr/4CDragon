@@ -237,7 +237,9 @@ nav {
     padding: 3px 10px;
     background: url("../img/menu-left-background.png");
     background-size: cover;
-    //text-align: -webkit-right;
+    text-align: right;
+    text-align: -webkit-right;
+    text-align: -moz-right;
   
     .indexHead {
       height: 82px;
