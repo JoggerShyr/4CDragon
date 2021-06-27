@@ -201,6 +201,7 @@
             <h2>企業簡介</h2>
           </div>
           <div class="contentBody">
+            <iframe width="650" height="350" src="https://www.youtube.com/embed/qVnz1pSNmyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: 1em;"></iframe>
             <h2>四海之內揪朋友 ; 新鮮美味在遊龍</h2>
             <h3>起源: 看到四海遊龍就想到鍋貼</h3>
             <p>一九九三年，「四海遊龍」的第一塊招牌，在永和得和路的六合市場口豎立起來之後，從此改變了台灣的餐飲文化，四海遊龍讓鍋貼變成台灣《平民貴族美食》。</p>
@@ -567,6 +568,12 @@
         customerContents[i].style.display = (n == i) ? "block" : "none";
       }
     }
+
+    let ds = [...document.querySelectorAll('details')];
+
+    ds.forEach(d=>d.addEventListener('click',
+      e=>e.shiftKey||ds.filter(i=>i!=d).forEach(i=>i.removeAttribute('open'))));
+
   </script>
 
   <script>
