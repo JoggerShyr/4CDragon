@@ -201,7 +201,7 @@
             <h2>企業簡介</h2>
           </div>
           <div class="contentBody">
-            <iframe width="650" height="350" src="https://www.youtube.com/embed/qVnz1pSNmyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: 1em;"></iframe>
+            <iframe width="90%" height="320" src="https://www.youtube.com/embed/qVnz1pSNmyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: 1em; border-radius: 5%;"></iframe>
             <h2>四海之內揪朋友 ; 新鮮美味在遊龍</h2>
             <h3>起源: 看到四海遊龍就想到鍋貼</h3>
             <p>一九九三年，「四海遊龍」的第一塊招牌，在永和得和路的六合市場口豎立起來之後，從此改變了台灣的餐飲文化，四海遊龍讓鍋貼變成台灣《平民貴族美食》。</p>
@@ -429,157 +429,202 @@
     showPartner(0);
 
     function showPartner(n) {
-      for (i = 0; i < partnerContents.length; i++) {
-        partnerContents[i].style.display = (n == i) ? "block" : "none";
+        for (i = 0; i < partnerContents.length; i++) {
+          partnerContents[i].style.display = (n == i) ? "block" : "none";
+        }
       }
-    }
-  </script>
+    </script>
 
-  <section id="products">
-    <h1>饕家美食</h1>
-  </section>
-
-  <section id="subsidery">
-    <h1 style="border-bottom: 2px solid black;">門市查詢</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29233.771145557796!2d120.2914441!3d23.6680394!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stw!4v1624717859385!5m2!1sen!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
-  <section id="customer">
-    <div class="container">
-      <div class="index">
-        <div class="indexHead">客服專區</div>
-        <ul class="indexBody">
-          <li>
-            <a href="#joinFaq" onclick="showCustomer(0)">
-              <img src="img/button_before-160x43.png">
-              <span>加盟 FAQ</span>
-            </a>
-          </li>
-          <li>
-            <a href="#foodFaq" onclick="showCustomer(1)">
-              <img src="img/button_before-160x43.png">
-              <span>食材 FAQ</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact" onclick="showCustomer(2)">
-              <img src="img/button_before-160x43.png">
-              <span>客服專線</span>
-            </a>
-          </li>
-        </ul>
+    <section id="products">
+      <h1>饕家美食</h1>
+      <div class="menu">
+        <a href="#">
+          <img src="img/menu/0101招牌鍋貼.jpg" alt="鍋貼">
+          <span class="bottom-left">鍋貼</span>
+        </a>
+        <a href="#">
+          <img src="img/menu/0201招牌水餃 .jpg">
+          <span class="bottom-left">水餃</span>
+        </a>
+        <a href="#">
+          <img src="img/menu/0301牛肉麵(含6塊牛肉).jpg">
+          <span class="bottom-left">麵類</span>
+        </a>
+        <a href="#">
+          <img src="img/menu/0401牛肉湯(含3塊牛肉).jpg">
+          <span class="bottom-left">湯品</span>
+        </a>
+        <a href="#">
+          <img src="img/menu/0501豆漿.jpg">
+          <span class="bottom-left">飲品</span>
+        </a>
+        <a href="#">
+          <img src="img/menu/0601豬耳朵.jpg">
+          <span class="bottom-left">小菜</span>
+        </a>
       </div>
-      <div class="contents">
-        <div id="joinFaq" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>加盟 FAQ</h2>
-          </div>
-          <div class="contentBody">
-            <details>
-              <summary>如何才能加盟四海遊龍鍋貼專賣店呢？</summary>
-              <p>加盟流程</p>
-              <ol>
-                <li>資格審核。</li>
-                <li>雙方拜訪約談：加盟契約、規章說明...雙方充份溝通加盟觀念。</li>
-                <li>閱讀了解加盟契約、規章 。</li>
-                <li>商圈立地調查評估、商圈經營保障。</li>
-                <li>簽訂加盟契約。</li>
-                <li>教育訓練、人員招募。</li>
-                <li>招開工程協調會，設計發包。</li>
-                <li>店面實習。</li>
-                <li>開店籌備會、員工結業核定、開店準備。</li>
-                <li>營業開始。</li>
-                <li>i專員到店面協助及輔導。</li>
-              </ol>
-              <p>或電洽加盟專線0800-22-44-66</p>
-            </details>
-            <details>
-              <summary>沒有做飲食經驗可以加盟四海游龍嗎？公司會幫忙找店面嗎？</summary>
-              <p>王先生您好～<br>不論有沒有餐飲經驗，都竭誠歡迎您加入我們四海遊龍鍋貼專賣店有20年的歷史有豐富的經營管理經驗，能提供加盟者最大的協助另提及公司是否會幫忙找店面本公司有專人專職協尋店面，請您放心</p>
-            </details>
-            <details>
-              <summary>有開放對外加盟嗎?還是只有員工可以加盟呢？</summary>
-              <p>KEN您好～<br>本公司近期已開放對外加盟如您有意願加盟請您直接撥打免付費專線 0800-22-44-66 本公司將有專人與您連絡</p>
-            </details>
-            <details>
-              <summary>請問加拿大可以加盟嗎？</summary>
-              <p>Josephine 您好!<br>目前本公司僅開放台灣加盟其他地區尚未進駐, 如您有意願加盟歡迎電洽加盟客服專線 0800-22-44-66 我們有專人為您服務，謝謝您的支持.</p>
-            </details>
-            <details>
-              <summary>我住新竹市我想加盟</summary>
-              <p>王先生您好～<br>歡迎電洽加盟客服專線 0800-22-44-66 我們有專人為您服務，謝謝您的支持.</p>
-            </details>
-            <details>
-              <summary>上週已e-mail過去了，新竹市可有地點可加盟，加盟細節？</summary>
-              <p>溫小姐您好~非常感激您的來信<br>新竹地區目前仍可加盟為解答您的疑問及加速作業時間, 請您來信留下您的聯絡方式或撥打客服專線 0800-22-44-66 我們有專人為您服務, 再次謝謝您的來信.</p>
-            </details>
-            <details>
-              <summary>您好~~我有意願加盟，想了解加盟細節</summary>
-              <p>張小姐/先生您好~<br>謝謝您對本公司的支持, 有關加盟細節請撥打免費專線 0800-22-44-66 將有專人為您解說.</p>
-            </details>
-            <details>
-              <summary>我想在新竹縣竹北市加盟可以嗎？</summary>
-              <p>吳先生您好~非常感激您的來信<br>新竹地區目前仍可加盟, 為解答您的疑問及加速作業時間, 請您來信留下您的聯絡方式或撥打加盟專線 0972202966 我們有專人為您服務, 再次謝謝您的來信.</p>
-            </details>
-            <details>
-              <summary>您好！有對你們的產品蠻有興趣的，想要多了解您們一些加盟資訊!</summary>
-              <p>郭先生您好~非常感激您的來信<br>感謝您對本公司各項產品的支持, 有關加盟資訊可參考本網址 http://www.0800224466.com/ 或請撥打 0972202966 我們將有專人為您服務, 再次謝謝您的來信.</p>
-            </details>
-            <details>
-              <summary>我想在彰化市彰商彰中之間開加盟店可以嗎？</summary>
-              <p>黃先生您好~<br>四海遊龍鍋貼專賣店在彰化縣市目前僅五間分店, 您提及的區域只要對現有營業據點的影響不大, 我們都很歡迎您加入我們.</p>
-            </details>
-          </div>
+
+      <div id="fried-dumpling" class="dishes">
+        <div class="dish">
+          <img src="img/menu/0101招牌鍋貼.jpg">
+          <span class="buttom-center">招牌鍋貼</span>
+          <p>香甜可口, 美味無窮</p>
         </div>
-        <div id="foodFaq" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>食材 FAQ</h2>
-          </div>
-          <div class="contentBody">
-            <details>
-              <summary>你們的鍋貼和水餃包的肉都乾淨衛生嗎？</summary>
-              <p>非常感謝您來信對本公司之指教。<br>本公司肉品長期以來皆委由香里食品企業提供（通過農委會CAS優良食品及HACCP兩項認證）每天每日生產，每日配送（全程低溫保鮮）請您安心食用。</p>
-            </details>
-          </div>
+        <div class="dish">
+          <img src="img/menu/0102韭菜鍋貼.jpg">
+          <span class="buttom-center">韭菜鍋貼</span>
+          <p>好吃! 再來一鍋.</p>
         </div>
-        <div id="contact" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>客服專線</h2>
-          </div>
-          <div class="contentBody">
-            <h2>客服專線請您撥打</h2>
-            <h1>0800-22-44-66</h1>
-          </div>
+        <div class="dish">
+          <img src="img/menu/0103辣味鍋貼.jpg">
+          <span class="buttom-center">辣味鍋貼</span>
+          <p>好辣! 小姐! 好辣!</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <script>
-    var customerContents = document.getElementById("customer").getElementsByClassName("content");
+    </section>
 
-    showCustomer(0);
+    <section id="subsidery">
+      <h1 style="border-bottom: 2px solid black;">門市查詢</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29233.771145557796!2d120.2914441!3d23.6680394!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stw!4v1624717859385!5m2!1sen!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
-    function showCustomer(n) {
-      for (i = 0; i < customerContents.length; i++) {
-        customerContents[i].style.display = (n == i) ? "block" : "none";
+    <section id="customer">
+      <div class="container">
+        <div class="index">
+          <div class="indexHead">客服專區</div>
+          <ul class="indexBody">
+            <li>
+              <a href="#joinFaq" onclick="showCustomer(0)">
+                <img src="img/button_before-160x43.png">
+                <span>加盟 FAQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#foodFaq" onclick="showCustomer(1)">
+                <img src="img/button_before-160x43.png">
+                <span>食材 FAQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onclick="showCustomer(2)">
+                <img src="img/button_before-160x43.png">
+                <span>客服專線</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contents">
+          <div id="joinFaq" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png">
+              <h2>加盟 FAQ</h2>
+            </div>
+            <div class="contentBody">
+              <details>
+                <summary>如何才能加盟四海遊龍鍋貼專賣店呢？</summary>
+                <p>加盟流程</p>
+                <ol>
+                  <li>資格審核。</li>
+                  <li>雙方拜訪約談：加盟契約、規章說明...雙方充份溝通加盟觀念。</li>
+                  <li>閱讀了解加盟契約、規章 。</li>
+                  <li>商圈立地調查評估、商圈經營保障。</li>
+                  <li>簽訂加盟契約。</li>
+                  <li>教育訓練、人員招募。</li>
+                  <li>招開工程協調會，設計發包。</li>
+                  <li>店面實習。</li>
+                  <li>開店籌備會、員工結業核定、開店準備。</li>
+                  <li>營業開始。</li>
+                  <li>i專員到店面協助及輔導。</li>
+                </ol>
+                <p>或電洽加盟專線0800-22-44-66</p>
+              </details>
+              <details>
+                <summary>沒有做飲食經驗可以加盟四海游龍嗎？公司會幫忙找店面嗎？</summary>
+                <p>王先生您好～<br>不論有沒有餐飲經驗，都竭誠歡迎您加入我們四海遊龍鍋貼專賣店有20年的歷史有豐富的經營管理經驗，能提供加盟者最大的協助另提及公司是否會幫忙找店面本公司有專人專職協尋店面，請您放心</p>
+              </details>
+              <details>
+                <summary>有開放對外加盟嗎?還是只有員工可以加盟呢？</summary>
+                <p>KEN您好～<br>本公司近期已開放對外加盟如您有意願加盟請您直接撥打免付費專線 0800-22-44-66 本公司將有專人與您連絡</p>
+              </details>
+              <details>
+                <summary>請問加拿大可以加盟嗎？</summary>
+                <p>Josephine 您好!<br>目前本公司僅開放台灣加盟其他地區尚未進駐, 如您有意願加盟歡迎電洽加盟客服專線 0800-22-44-66 我們有專人為您服務，謝謝您的支持.</p>
+              </details>
+              <details>
+                <summary>我住新竹市我想加盟</summary>
+                <p>王先生您好～<br>歡迎電洽加盟客服專線 0800-22-44-66 我們有專人為您服務，謝謝您的支持.</p>
+              </details>
+              <details>
+                <summary>上週已e-mail過去了，新竹市可有地點可加盟，加盟細節？</summary>
+                <p>溫小姐您好~非常感激您的來信<br>新竹地區目前仍可加盟為解答您的疑問及加速作業時間, 請您來信留下您的聯絡方式或撥打客服專線 0800-22-44-66 我們有專人為您服務, 再次謝謝您的來信.</p>
+              </details>
+              <details>
+                <summary>您好~~我有意願加盟，想了解加盟細節</summary>
+                <p>張小姐/先生您好~<br>謝謝您對本公司的支持, 有關加盟細節請撥打免費專線 0800-22-44-66 將有專人為您解說.</p>
+              </details>
+              <details>
+                <summary>我想在新竹縣竹北市加盟可以嗎？</summary>
+                <p>吳先生您好~非常感激您的來信<br>新竹地區目前仍可加盟, 為解答您的疑問及加速作業時間, 請您來信留下您的聯絡方式或撥打加盟專線 0972202966 我們有專人為您服務, 再次謝謝您的來信.</p>
+              </details>
+              <details>
+                <summary>您好！有對你們的產品蠻有興趣的，想要多了解您們一些加盟資訊!</summary>
+                <p>郭先生您好~非常感激您的來信<br>感謝您對本公司各項產品的支持, 有關加盟資訊可參考本網址 http://www.0800224466.com/ 或請撥打 0972202966 我們將有專人為您服務, 再次謝謝您的來信.</p>
+              </details>
+              <details>
+                <summary>我想在彰化市彰商彰中之間開加盟店可以嗎？</summary>
+                <p>黃先生您好~<br>四海遊龍鍋貼專賣店在彰化縣市目前僅五間分店, 您提及的區域只要對現有營業據點的影響不大, 我們都很歡迎您加入我們.</p>
+              </details>
+            </div>
+          </div>
+          <div id="foodFaq" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png">
+              <h2>食材 FAQ</h2>
+            </div>
+            <div class="contentBody">
+              <details>
+                <summary>你們的鍋貼和水餃包的肉都乾淨衛生嗎？</summary>
+                <p>非常感謝您來信對本公司之指教。<br>本公司肉品長期以來皆委由香里食品企業提供（通過農委會CAS優良食品及HACCP兩項認證）每天每日生產，每日配送（全程低溫保鮮）請您安心食用。</p>
+              </details>
+            </div>
+          </div>
+          <div id="contact" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png">
+              <h2>客服專線</h2>
+            </div>
+            <div class="contentBody">
+              <h2>客服專線請您撥打</h2>
+              <h1>0800-22-44-66</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var customerContents = document.getElementById("customer").getElementsByClassName("content");
+
+      showCustomer(0);
+
+      function showCustomer(n) {
+        for (i = 0; i < customerContents.length; i++) {
+          customerContents[i].style.display = (n == i) ? "block" : "none";
+        }
       }
-    }
 
-    let ds = [...document.querySelectorAll('details')];
+      let ds = [...document.querySelectorAll('details')];
 
-    ds.forEach(d=>d.addEventListener('click',
-      e=>e.shiftKey||ds.filter(i=>i!=d).forEach(i=>i.removeAttribute('open'))));
+      ds.forEach(d=>d.addEventListener('click',
+        e=>e.shiftKey||ds.filter(i=>i!=d).forEach(i=>i.removeAttribute('open'))));
 
   </script>
 
   <script>
     var sections = document.getElementsByTagName("section");
 
-    displaySection(1);
+    displaySection(3);
 
     function displaySection(n) {
       for (i = 0; i < sections.length; i++) {

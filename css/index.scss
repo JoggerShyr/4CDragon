@@ -37,6 +37,7 @@ summary {
   cursor: pointer;
   list-style: square;
 }
+
 // !
 // ! .banner
 // !
@@ -298,6 +299,73 @@ nav {
     }
 
   }
+}
+
+//!
+//! products
+//!
+#products {
+  margin: auto 1em;
+
+  h1 {
+    border-bottom: 2px solid $primary-color;
+  }
+
+  .menu {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2.5em; column-gap: 3em;
+
+    img {
+      border: 2px solid $primary-color;
+      border-radius: 5%;
+      box-shadow: 5px -5px 10px $primary-color;
+      width: 205px;
+      height: 135px;
+    }
+
+    a {
+      position: relative;
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font: bold;
+        font-size: larger;
+      }
+    }
+  } // menu
+
+  .dishes {
+    margin: 3em;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3em;
+    overflow: scroll;
+
+    .dish {
+      img {
+        border: 2px solid $primary-color;
+        border-radius: 5%;
+        box-shadow: 5px -5px 10px $primary-color;
+      }
+
+      position: relative;
+      .buttom-center {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        font: bold;
+        font-size: larger;
+      }
+    }
+  }
+
 }
 
 //!
