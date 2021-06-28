@@ -364,7 +364,6 @@ nav ul a:hover {
 }
 
 #products .dishPage .dishes {
-  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,15 +376,20 @@ nav ul a:hover {
 }
 
 #products .dishPage .dishes .dish {
-  border: 5px double #095d2c;
+  border: 2px solid #095d2c;
   border-radius: 5%;
-  text-align: center;
+  -webkit-box-shadow: 5px -5px 10px #095d2c;
+          box-shadow: 5px -5px 10px #095d2c;
   width: auto;
-  max-width: 410px;
+  max-width: 250px;
+  padding: .5em;
+  text-align: center;
 }
 
 #products .dishPage .dishes .dish img {
   border-radius: 50%;
+  width: 205px;
+  height: 135px;
 }
 
 #products .dishPage .dishes .dish img + p {
