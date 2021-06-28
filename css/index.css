@@ -308,11 +308,11 @@ nav ul a:hover {
   margin: auto 1em;
 }
 
-#products h1 {
+#products .menuPage h1 {
   border-bottom: 2px solid #095d2c;
 }
 
-#products .menu {
+#products .menuPage .menu {
   margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,7 +330,7 @@ nav ul a:hover {
           column-gap: 3em;
 }
 
-#products .menu img {
+#products .menuPage .menu img {
   border: 2px solid #095d2c;
   border-radius: 5%;
   -webkit-box-shadow: 5px -5px 10px #095d2c;
@@ -339,11 +339,11 @@ nav ul a:hover {
   height: 135px;
 }
 
-#products .menu a {
+#products .menuPage .menu a {
   position: relative;
 }
 
-#products .menu a .bottom-left {
+#products .menuPage .menu a .bottom-left {
   position: absolute;
   bottom: 8px;
   left: 16px;
@@ -351,36 +351,47 @@ nav ul a:hover {
   font-size: larger;
 }
 
-#products .dishes {
-  margin: 3em;
+#products .menuPage .menu a:link, #products .menuPage .menu a:active, #products .menuPage .menu a:hover, #products .menuPage .menu a:visited {
+  color: inherit;
+}
+
+#products .dishPage {
+  display: none;
+}
+
+#products .dishPage h1 {
+  border-bottom: 2px solid #095d2c;
+}
+
+#products .dishPage .dishes {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  gap: 3em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 3em;
-          column-gap: 3em;
   overflow: scroll;
 }
 
-#products .dishes .dish {
-  position: relative;
-}
-
-#products .dishes .dish img {
-  border: 2px solid #095d2c;
+#products .dishPage .dishes .dish {
+  border: 5px double #095d2c;
   border-radius: 5%;
-  -webkit-box-shadow: 5px -5px 10px #095d2c;
-          box-shadow: 5px -5px 10px #095d2c;
+  position: relative;
+  text-align: center;
 }
 
-#products .dishes .dish .buttom-center {
+#products .dishPage .dishes .dish .buttom-center {
   position: absolute;
   top: 50%;
   left: 50%;

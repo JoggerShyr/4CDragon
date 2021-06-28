@@ -290,7 +290,6 @@
         aboutContents[i].style.display = (n == i) ? "block" : "none";
       }
     }
-
   </script>
 
   <section id="partner">
@@ -435,36 +434,43 @@
   </script>
 
   <section id="products">
-    <h1>饕家美食</h1>
-    <div class="menu">
-      <a href="#">
-        <img src="img/menu/0101招牌鍋貼.jpg" alt="鍋貼">
-        <span class="bottom-left">鍋貼</span>
-      </a>
-      <a href="#">
-        <img src="img/menu/0201招牌水餃 .jpg">
-        <span class="bottom-left">水餃</span>
-      </a>
-      <a href="#">
-        <img src="img/menu/0301牛肉麵(含6塊牛肉).jpg">
-        <span class="bottom-left">麵類</span>
-      </a>
-      <a href="#">
-        <img src="img/menu/0401牛肉湯(含3塊牛肉).jpg">
-        <span class="bottom-left">湯品</span>
-      </a>
-      <a href="#">
-        <img src="img/menu/0501豆漿.jpg">
-        <span class="bottom-left">飲品</span>
-      </a>
-      <a href="#">
-        <img src="img/menu/0601豬耳朵.jpg">
-        <span class="bottom-left">小菜</span>
-      </a>
+    <div class="menuPage">
+
+      <h1>饕家美食</h1>
+      <div class="menu">
+        <a href="#fried-dumping" onclick="showDishes(0)">
+          <img src="img/menu/0101招牌鍋貼.jpg" alt="鍋貼">
+          <span class="bottom-left">鍋貼</span>
+        </a>
+        <a href="#">
+          <img src="img/menu/0201招牌水餃 .jpg">
+          <span class="bottom-left">水餃</span>
+        </a>
+        <a href="#">
+          <img src="img/menu/0301牛肉麵(含6塊牛肉).jpg">
+          <span class="bottom-left">麵類</span>
+        </a>
+        <a href="#">
+          <img src="img/menu/0401牛肉湯(含3塊牛肉).jpg">
+          <span class="bottom-left">湯品</span>
+        </a>
+        <a href="#">
+         <img src="img/menu/0501豆漿.jpg">
+         <span class="bottom-left">飲品</span>
+        </a>
+        <a href="#">
+          <img src="img/menu/0601豬耳朵.jpg">
+          <span class="bottom-left">小菜</span>
+        </a>
+      </div>
+
     </div>
 
-    <div id="fried-dumpling" class="dishes">
-      <div class="dish">
+    <div class="dishPage">
+
+      <h1><span onclick="showMenu()">饕家美食</span>/鍋貼</h1>
+      <div id="fried-dumpling" class="dishes">
+        <div class="dish">
         <img src="img/menu/0101招牌鍋貼.jpg">
         <span class="buttom-center">招牌鍋貼</span>
         <p>香甜可口, 美味無窮</p>
@@ -480,11 +486,32 @@
         <p>好辣! 小姐! 好辣!</p>
       </div>
     </div>
+
+    </div>
+
+    <script> /* page switch */
+      var
+        menu = document.getElementsByClassName("menuPage"),
+        dishes = document.getElementsByClassName("dishPage");
+
+      function showMenu() {
+        menu[0].style.display = "block";
+        for (i = 0; i < dishes.length; i++)
+          dishes[i].style.display = "none";
+      }
+
+      function showDishes(n) {
+        menu[0].style.display = "none";
+        for (i = 0; i < dishes.length; i++) {
+          dishes[i].style.display = (n == i) ? "block" : "none";
+        }
+      }
+    </script>
   </section>
 
   <section id="subsidery">
-      <h1 style="border-bottom: 2px solid black;">門市查詢</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29233.771145557796!2d120.2914441!3d23.6680394!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stw!4v1624717859385!5m2!1sen!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <h1 style="border-bottom: 2px solid black;">門市查詢</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29233.771145557796!2d120.2914441!3d23.6680394!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stw!4v1624717859385!5m2!1sen!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
   <section id="customer">
@@ -602,20 +629,20 @@
   </section>
 
   <script>
-      var customerContents = document.getElementById("customer").getElementsByClassName("content");
+    var customerContents = document.getElementById("customer").getElementsByClassName("content");
 
-      showCustomer(0);
+    showCustomer(0);
 
-      function showCustomer(n) {
-        for (i = 0; i < customerContents.length; i++) {
-          customerContents[i].style.display = (n == i) ? "block" : "none";
-        }
+    function showCustomer(n) {
+      for (i = 0; i < customerContents.length; i++) {
+        customerContents[i].style.display = (n == i) ? "block" : "none";
       }
+    }
 
-      let ds = [...document.querySelectorAll('details')];
+    let ds = [...document.querySelectorAll('details')];
 
-      ds.forEach(d=>d.addEventListener('click',
-        e=>e.shiftKey||ds.filter(i=>i!=d).forEach(i=>i.removeAttribute('open'))));
+    ds.forEach(d=>d.addEventListener('click',
+      e=>e.shiftKey||ds.filter(i=>i!=d).forEach(i=>i.removeAttribute('open'))));
   </script>
 
   <script>
