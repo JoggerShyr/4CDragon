@@ -47,15 +47,13 @@
         <ul>
           <li><a href="#about" onclick="displaySection(1)">關於我們</a></li>
           <li><a href="#partner" onclick="displaySection(2)">成為夥伴</a></li>
-          <li><a href="#products" onclick="showMenu()">饕家美饌</a></li>
+          <li><a href="#products" onclick="displaySection(3)">饕家美饌</a></li>
           <li><a href="#subsidery" onclick="displaySection(4)">門市查詢</a></li>
           <li><a href="#customer" onclick="displaySection(5)">客服專區</a></li>
         </ul>
       </nav>
     </div>
-  </div>
-
-  <script>
+    <script>
     const nav = document.querySelector("nav"),
       mobileBtn = document.getElementById("openMenu"),
       mobileBtnExit = document.getElementById("closeMenu");
@@ -67,7 +65,8 @@
     mobileBtnExit.addEventListener("click", () => {
       nav.classList.remove("menu-btn");
     });
-  </script>
+    </script>
+  </div>
 
   <section id="welcome">
     <!-- slides -->
@@ -133,9 +132,7 @@
       <span class="dot" onclick="goSlide(2)"></span>
     </div>
     -->
-  </section>
-
-  <script>
+    <script>
     var slideIndex = 1;
 
     showSlide(slideIndex);
@@ -167,7 +164,8 @@
 
       setTimeout(nextSlide, 3000);
     }
-  </script>
+    </script>
+  </section>
 
   <section id="about">
     <div class="container">
@@ -278,9 +276,7 @@
         </div>
       </div>
     </div>
-  </section>
- 
-  <script>
+    <script>
     var aboutContents = document.getElementById("about").getElementsByClassName("content");
 
     showAbout(0);
@@ -290,7 +286,8 @@
         aboutContents[i].style.display = (n == i) ? "block" : "none";
       }
     }
-  </script>
+    </script>
+  </section>
 
   <section id="partner">
     <div class="container">
@@ -419,9 +416,7 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <script>
+    <script>
     var partnerContents = document.getElementById("partner").getElementsByClassName("content");
 
     showPartner(0);
@@ -431,7 +426,8 @@
           partnerContents[i].style.display = (n == i) ? "block" : "none";
         }
       }
-  </script>
+    </script>
+  </section>
 
   <section id="products">
     <div class="menuPage">
@@ -554,58 +550,58 @@
       </div>
     </div>
 
-  <div id="noodles" class="dishPage">
-    <h1><span onclick="showMenu()">饕家美食</span>/麵類</h1>
-    <div class="dishes">
-      <div class="dish">
-        <img src="img/menu/0301牛肉麵(含6塊牛肉).jpg">
-        <p>牛肉麵</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur possimus placeat nesciunt? Impedit voluptates quisquam autem, voluptate iusto, ea at beatae reiciendis, officiis consectetur explicabo! Repellendus sapiente asperiores quam iusto?</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0302牛肉乾拌麵.jpg">
-        <p>牛肉乾拌麵</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quia libero beatae animi possimus a modi repellat cupiditate dolore, et enim culpa, eos delectus sequi quis reiciendis voluptas id odit!</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0303牛肉醬拌麵.jpg">
-        <p>牛肉醬拌麵</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus aspernatur culpa iste, assumenda neque ullam impedit cumque iure corporis! Voluptatem repellat perferendis non tenetur, hic maiores ab amet aliquid.</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0304餛飩麵.jpg">
-        <p>餛飩麵</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, eligendi vitae magni, culpa quas architecto inventore molestias sed quam incidunt sunt quasi cum sint modi ullam eius aperiam explicabo ipsa.</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0305肉燥拌麵.jpg">
-        <p>肉燥拌麵</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere fuga illum pariatur impedit sed accusamus quae deleniti maiores soluta eum dolore quisquam, libero, officia qui numquam ratione quibusdam? Autem, repudiandae!</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0306牛肉湯麵.jpg">
-        <p>牛肉湯麵</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque rerum fugiat alias dolore sequi. Alias dolorem ut quo, fuga distinctio commodi quibusdam esse! Harum magni suscipit cupiditate rerum assumenda temporibus!</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0307酸辣麵.jpg">
-        <p>酸辣麵</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam harum exercitationem magni similique. Tenetur facere, cumque, dolorum quia nostrum fuga tempore ipsum expedita animi modi necessitatibus excepturi, adipisci sequi voluptate.</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0308川味擔擔麵.jpg">
-        <p>川味擔擔麵</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia corporis sapiente quidem. Delectus ipsa cumque, necessitatibus vel saepe excepturi nemo, tempora blanditiis magni quibusdam vero expedita nostrum perferendis, aliquam esse.</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0309塔香辣肉醬麵.jpg">
-        <p>塔香辣肉醬麵</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cum, inventore asperiores rem omnis fugit quae vero provident vitae recusandae dolor, perferendis id totam soluta, adipisci corrupti. Cumque, incidunt obcaecati!</p>
+    <div id="noodles" class="dishPage">
+      <h1><span onclick="showMenu()">饕家美食</span>/麵類</h1>
+      <div class="dishes">
+        <div class="dish">
+         <img src="img/menu/0301牛肉麵(含6塊牛肉).jpg">
+          <p>牛肉麵</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur possimus placeat nesciunt? Impedit voluptates quisquam autem, voluptate iusto, ea at beatae reiciendis, officiis consectetur explicabo! Repellendus sapiente asperiores quam iusto?</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0302牛肉乾拌麵.jpg">
+          <p>牛肉乾拌麵</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quia libero beatae animi possimus a modi repellat cupiditate dolore, et enim culpa, eos delectus sequi quis reiciendis voluptas id odit!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0303牛肉醬拌麵.jpg">
+          <p>牛肉醬拌麵</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus aspernatur culpa iste, assumenda neque ullam impedit cumque iure corporis! Voluptatem repellat perferendis non tenetur, hic maiores ab amet aliquid.</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0304餛飩麵.jpg">
+          <p>餛飩麵</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, eligendi vitae magni, culpa quas architecto inventore molestias sed quam incidunt sunt quasi cum sint modi ullam eius aperiam explicabo ipsa.</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0305肉燥拌麵.jpg">
+          <p>肉燥拌麵</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere fuga illum pariatur impedit sed accusamus quae deleniti maiores soluta eum dolore quisquam, libero, officia qui numquam ratione quibusdam? Autem, repudiandae!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0306牛肉湯麵.jpg">
+          <p>牛肉湯麵</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque rerum fugiat alias dolore sequi. Alias dolorem ut quo, fuga distinctio commodi quibusdam esse! Harum magni suscipit cupiditate rerum assumenda temporibus!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0307酸辣麵.jpg">
+          <p>酸辣麵</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam harum exercitationem magni similique. Tenetur facere, cumque, dolorum quia nostrum fuga tempore ipsum expedita animi modi necessitatibus excepturi, adipisci sequi voluptate.</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0308川味擔擔麵.jpg">
+          <p>川味擔擔麵</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia corporis sapiente quidem. Delectus ipsa cumque, necessitatibus vel saepe excepturi nemo, tempora blanditiis magni quibusdam vero expedita nostrum perferendis, aliquam esse.</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0309塔香辣肉醬麵.jpg">
+          <p>塔香辣肉醬麵</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam cum, inventore asperiores rem omnis fugit quae vero provident vitae recusandae dolor, perferendis id totam soluta, adipisci corrupti. Cumque, incidunt obcaecati!</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="soup" class="dishPage">
+    <div id="soup" class="dishPage">
     <h1><span onclick="showMenu()">饕家美食</span>/湯品</h1>
     <div class="dishes">
       <div class="dish">
@@ -639,9 +635,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero at, aspernatur odit laboriosam quia cumque, veritatis aliquid tempora quaerat inventore minus harum iusto non tempore! Eaque illo totam exercitationem?</p>
       </div>
     </div>
-  </div>
+    </div>
 
-  <div id="drink" class="dishPage">
+    <div id="drink" class="dishPage">
     <h1><span onclick="showMenu()">饕家美食</span>/飲品</h1>
     <div class="dishes">
       <div class="dish">
@@ -670,9 +666,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum exercitationem itaque illum fugit sunt amet voluptate molestias maiores quisquam quos, praesentium inventore dignissimos ipsa. Nostrum quam perspiciatis quidem in dignissimos!</p>
       </div>
     </div>
-  </div>
+    </div>
 
-  <div id="side-dish" class="dishPage">
+    <div id="side-dish" class="dishPage">
     <h1><span onclick="showMenu()">饕家美食</span>/小菜</h1>
     <div class="dishes">
       <div class="dish">
@@ -726,7 +722,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore porro neque beatae eos incidunt cupiditate illo, sequi quibusdam, iste vitae consequuntur dolorum sit! Excepturi aspernatur, accusantium placeat eaque recusandae eveniet!</p>
       </div>
     </div>
-  </div>
+    </div>
 
     <script> /* page switch */
       var
@@ -754,7 +750,7 @@
   </section>
 
   <section id="customer">
-      <div class="container">
+    <div class="container">
         <div class="index">
           <div class="indexHead">客服專區</div>
           <ul class="indexBody">
@@ -864,25 +860,24 @@
             </div>
           </div>
         </div>
-      </div>
-  </section>
-
-  <script>
-    var customerContents = document.getElementById("customer").getElementsByClassName("content");
-
-    showCustomer(0);
-
-    function showCustomer(n) {
-      for (i = 0; i < customerContents.length; i++) {
-        customerContents[i].style.display = (n == i) ? "block" : "none";
+    </div>
+    <script>
+      var customerContents = document.getElementById("customer").  getElementsByClassName("content");
+  
+      showCustomer(0);
+  
+      function showCustomer(n) {
+        for (i = 0; i < customerContents.length; i++) {
+          customerContents[i].style.display = (n == i) ? "block" :   "none";
+        }
       }
-    }
-
-    let ds = [...document.querySelectorAll('details')];
-
-    ds.forEach(d=>d.addEventListener('click',
-      e=>e.shiftKey||ds.filter(i=>i!=d).forEach(i=>i.removeAttribute('open'))));
-  </script>
+  
+      let ds = [...document.querySelectorAll('details')];
+  
+      ds.forEach(d=>d.addEventListener('click',
+        e=>e.shiftKey||ds.filter(i=>i!=d).forEach(i=>i.removeAttribute  ('open'))));
+    </script>
+  </section>
 
   <script>
     var sections = document.getElementsByTagName("section");
