@@ -308,7 +308,7 @@ nav ul a:hover {
   margin: auto 1em;
 }
 
-#products .menuPage h1 {
+#products h1 {
   border-bottom: 2px solid #095d2c;
 }
 
@@ -359,46 +359,38 @@ nav ul a:hover {
   display: none;
 }
 
-#products .dishPage h1 {
-  border-bottom: 2px solid #095d2c;
+#products .dishPage h1 > span {
+  cursor: pointer;
 }
 
 #products .dishPage .dishes {
-  width: 100%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  gap: 3em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: scroll;
 }
 
 #products .dishPage .dishes .dish {
   border: 5px double #095d2c;
   border-radius: 5%;
-  position: relative;
   text-align: center;
+  width: auto;
+  max-width: 410px;
 }
 
-#products .dishPage .dishes .dish .buttom-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+#products .dishPage .dishes .dish img {
+  border-radius: 50%;
+}
+
+#products .dishPage .dishes .dish img + p {
   font: bold;
-  font-size: larger;
+  font-size: x-large;
 }
 
 footer {

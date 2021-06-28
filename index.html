@@ -47,7 +47,7 @@
         <ul>
           <li><a href="#about" onclick="displaySection(1)">關於我們</a></li>
           <li><a href="#partner" onclick="displaySection(2)">成為夥伴</a></li>
-          <li><a href="#products" onclick="displaySection(3)">饕家美饌</a></li>
+          <li><a href="#products" onclick="showMenu()">饕家美饌</a></li>
           <li><a href="#subsidery" onclick="displaySection(4)">門市查詢</a></li>
           <li><a href="#customer" onclick="displaySection(5)">客服專區</a></li>
         </ul>
@@ -442,7 +442,7 @@
           <img src="img/menu/0101招牌鍋貼.jpg" alt="鍋貼">
           <span class="bottom-left">鍋貼</span>
         </a>
-        <a href="#">
+        <a href="#dumpling" onclick="showDishes(1)">
           <img src="img/menu/0201招牌水餃 .jpg">
           <span class="bottom-left">水餃</span>
         </a>
@@ -466,28 +466,97 @@
 
     </div>
 
-    <div class="dishPage">
+    <div id="fried-dumpling" class="dishPage">
 
       <h1><span onclick="showMenu()">饕家美食</span>/鍋貼</h1>
-      <div id="fried-dumpling" class="dishes">
+      <div class="dishes">
         <div class="dish">
-        <img src="img/menu/0101招牌鍋貼.jpg">
-        <span class="buttom-center">招牌鍋貼</span>
-        <p>香甜可口, 美味無窮</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0102韭菜鍋貼.jpg">
-        <span class="buttom-center">韭菜鍋貼</span>
-        <p>好吃! 再來一鍋.</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0103辣味鍋貼.jpg">
-        <span class="buttom-center">辣味鍋貼</span>
-        <p>好辣! 小姐! 好辣!</p>
+          <img src="img/menu/0101招牌鍋貼.jpg">
+          <p>招牌鍋貼</p>
+          <p>香甜可口, 美味無窮</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0102韭菜鍋貼.jpg">
+          <p>韭菜鍋貼</p>
+          <p>好吃! 再來一鍋.</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0103辣味鍋貼.jpg">
+          <p>辣味鍋貼</p>
+          <p>好辣! 小姐! 好辣!</p>
+        </div>
       </div>
     </div>
 
     </div>
+
+    <div id="dumpling" class="dishPage">
+      <h1><span onclick="showMenu()">饕家美食</span>/水餃</h1>
+      <div class="dishes">
+        <div class="dish">
+          <img src="img/menu/0201招牌水餃 .jpg">
+          <p>招牌水餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0202綠皮韭菜水餃.jpg">
+          <p>綠皮韭菜水餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0203辣味水餃.jpg">
+          <p>辣味水餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0204紅油抄手.jpg">
+          <p>紅油抄手</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0205鮮蝦水餃.jpg">
+          <p>鮮蝦水餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0206玉米水餃.jpg">
+          <p>玉米水餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0207蔬菜水餃.jpg">
+          <p>蔬菜水餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0208生水餃.jpg">
+          <p>生水餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0209鮮蝦生水餃.jpg">
+          <p>鮮蝦生水餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0210牛肉湯餃.jpg">
+          <p>牛肉湯餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0211酸辣湯餃.jpg">
+          <p>酸辣湯餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+        <div class="dish">
+          <img src="img/menu/0212咖哩雞水餃.jpg">
+          <p>咖哩雞水餃</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eligendi? Rem harum, aut illum quis dicta temporibus assumenda totam? Est omnis beatae aliquam impedit modi consectetur ipsa explicabo quam commodi!</p>
+        </div>
+      </div>
+    </div>
+
+
 
     <script> /* page switch */
       var
