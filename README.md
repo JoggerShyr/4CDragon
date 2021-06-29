@@ -25,4 +25,6 @@ Website Plan
 
 Memo:
 1. 開發考量, 先從 Desktop 版開始, 再來開發 Mobile 及 Phone.
-2. 
+
+History:
+1. 2021/6/29 19:50 Release 1.0
