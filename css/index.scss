@@ -35,7 +35,9 @@ section {
 
 summary {
   cursor: pointer;
-  list-style: square;
+  list-style: "Q. ";
+  font-size: large;
+  text-decoration: underline;
 }
 
 // !
@@ -374,6 +376,13 @@ nav {
         img + p {
           font: bold;
           font-size: x-large;
+        }
+
+        img + p + p {
+          text-align: left;
+          font-size: smaller;
+          border-left: 3px solid $primary-color;
+          padding-left: .5em;
         }
       }
     }
