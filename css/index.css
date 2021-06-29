@@ -28,7 +28,9 @@ section {
 
 summary {
   cursor: pointer;
-  list-style: square;
+  list-style: "Q. ";
+  font-size: large;
+  text-decoration: underline;
 }
 
 .banner {
@@ -395,6 +397,13 @@ nav ul a:hover {
 #products .dishPage .dishes .dish img + p {
   font: bold;
   font-size: x-large;
+}
+
+#products .dishPage .dishes .dish img + p + p {
+  text-align: left;
+  font-size: smaller;
+  border-left: 3px solid #095d2c;
+  padding-left: .5em;
 }
 
 footer {
