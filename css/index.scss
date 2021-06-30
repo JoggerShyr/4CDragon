@@ -153,6 +153,42 @@ nav {
   }
 }
 
+//!
+//! icon-bar
+//!
+.icon-bar {
+  position: fixed;
+  right: 1vw;
+  bottom: 5vh;
+
+  display: flex;
+  flex-direction: column;
+
+  a {
+    transition: all 0.5s ease;
+    svg {
+      width: 36px; height: 36px;
+      fill: white;
+    }
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+
+  .member { background: #3B5998; }
+  .shopping { background: #dd4b39; }
+}
+
+@media only screen and (min-width: 480px) {
+  .icon-bar {
+    position: fixed;
+    bottom: 3em;
+    right: 25%;
+    transform: translateX(100%);
+  }
+}
+
 // !
 // ! #welcome
 // !
