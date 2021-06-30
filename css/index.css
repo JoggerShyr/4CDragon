@@ -173,10 +173,9 @@ nav ul a:hover {
   transition: all 0.5s ease;
 }
 
-.icon-bar a svg {
+.icon-bar a img {
   width: 36px;
   height: 36px;
-  fill: white;
 }
 
 .icon-bar a:hover {
@@ -477,4 +476,9 @@ footer {
   left: 50%;
   -webkit-transform: translateX(-475px);
           transform: translateX(-475px);
+}
+
+.world img {
+  width: 24px;
+  height: 24px;
 }
