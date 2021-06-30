@@ -191,13 +191,13 @@ nav ul a:hover {
   background: #dd4b39;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 920px) {
   .icon-bar {
     position: fixed;
     bottom: 3em;
-    right: 25%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    right: 50%;
+    -webkit-transform: translateX(520px);
+            transform: translateX(520px);
   }
 }
 

@@ -180,12 +180,12 @@ nav {
   .shopping { background: #dd4b39; }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 920px) {
   .icon-bar {
     position: fixed;
     bottom: 3em;
-    right: 25%;
-    transform: translateX(100%);
+    right: 50%;
+    transform: translateX(520px);
   }
 }
 
