@@ -470,3 +470,11 @@ footer {
     font-weight: 100;
   }
 }
+
+.world {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-475px);
+          transform: translateX(-475px);
+}
