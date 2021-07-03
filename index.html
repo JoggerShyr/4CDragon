@@ -1,807 +1,1099 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" dir="ltr" lang="zh-tw">
-<head>
-  <meta charset="utf-8">
-  <title>四海遊龍 - Home</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>四海遊龍 - Home</title>
 
-  <!-- Disable browser caching -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-  <!-- Get rid off above code when production -->
+    <!-- Disable browser caching -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- Get rid off above code when production -->
 
-  <meta name="description" content="四海遊龍食品股份有限公司創立於民國八十二年，歷經二十多年的努力，為全台最老字號的鍋貼連鎖專賣店。面對市場競爭及嚴苛挑戰，在陳董事長等經營團隊帶領下，不斷地研發、創新與堅持品質，目前中國大陸的上海蘇州地區已有100餘間分店，香港、廣東省、福建省、浙江省等沿海地區亦陸續展店中，已成功將四海遊龍這個台灣品牌推向世界級的舞台，期望能再次締造台灣美食傳奇。">
+    <meta
+      name="description"
+      content="四海遊龍食品股份有限公司創立於民國八十二年，歷經二十多年的努力，為全台最老字號的鍋貼連鎖專賣店。面對市場競爭及嚴苛挑戰，在陳董事長等經營團隊帶領下，不斷地研發、創新與堅持品質，目前中國大陸的上海蘇州地區已有100餘間分店，香港、廣東省、福建省、浙江省等沿海地區亦陸續展店中，已成功將四海遊龍這個台灣品牌推向世界級的舞台，期望能再次締造台灣美食傳奇。"
+    />
 
-  <meta property="og:title" content="四海遊龍">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://www.4cdragon.com/">
-  <meta property="og:image" content="http://www.4cdragon.com/icon.png">
+    <meta property="og:title" content="四海遊龍" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.4cdragon.com/" />
+    <meta property="og:image" content="http://www.4cdragon.com/icon.png" />
 
-  <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="site.webmanifest" />
 
-  <!-- Icon -->
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="icon.png" type="image/png">
+    <!-- Icon -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="icon.png" type="image/png" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#095D2C">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#095D2C" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-  <!--the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
-  <!--[if lt IE 9]>
+    <!--the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
-<body>
-  <div class="banner">
-    <picture>
-      <source srcset="img/top-480x65.jpg" media="(max-width: 480px)">
-      <source srcset="img/top-576x78.jpg" media="(max-width: 576px)">
-      <source srcset="img/top-768x104.jpg" media="(max-width: 768px)">
-      <img src="img/top-960x130.jpg" style="width: 100%; height: auto; object-fit: fill;" onclick="displaySection(0)">
-    </picture>
-  </div>
-
-  <div class="navbar">
-    <div class="container">
-      <img id="openMenu" src="img/menu.svg" alt="Menu" class="mobile-menu">
-      <nav>
-        <img id="closeMenu" src="img/exit.svg" alt="Exit" class="mobile-menu-exit">
-        <ul>
-          <li><a href="#about" onclick="displaySection(1)">關於我們</a></li>
-          <li><a href="#partner" onclick="displaySection(2)">成為夥伴</a></li>
-          <li><a href="#products" onclick="displaySection(3)">饕家美饌</a></li>
-          <li><a href="#subsidery" onclick="displaySection(4)">門市查詢</a></li>
-          <li><a href="#customer" onclick="displaySection(5)">客服專區</a></li>
-        </ul>
-      </nav>
-    </div>
-    <script>
-      const nav = document.querySelector("nav"),
-        mobileBtn = document.getElementById("openMenu"),
-        mobileBtnExit = document.getElementById("closeMenu");
-  
-      mobileBtn.addEventListener("click", () => {
-        nav.classList.add("menu-btn");
-      });
-  
-      mobileBtnExit.addEventListener("click", () => {
-        nav.classList.remove("menu-btn");
-      });
-    </script>
-  </div>
-
-  <div class="icon-bar">
-    <a href="#" class="member">
-      <img src="img/member.svg">
-    </a>
-    <a href="#" class="shopping">
-      <img src="img/shopping.svg">
-    </a>
-  </div>
-
-  <section id="welcome">
-    <!-- slides -->
-    <div class="slideShow">
-      <div class="slide fade">
-        <picture>
-          <source srcset="img/slide-image-1-480x161.jpg" media="(max-width: 480px)">
-          <img src="img/slide-image-1-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
-        </picture>
-      </div>
-
-      <div class="slide fade">
-        <picture>
-          <source srcset="img/slide-image-2-480x161.jpg" media="(max-width: 480px)">
-          <img src="img/slide-image-2-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
-        </picture>
-      </div>
-
-      <div class="slide fade">
-        <picture>
-          <source srcset="img/slide-image-3-480x161.jpg" media="(max-width: 480px)">
-          <img src="img/slide-image-3-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
-        </picture>
-      </div>
-
-      <div class="slide fade">
-        <picture>
-          <source srcset="img/slide-image-4-480x161.jpg" media="(max-width: 480px)">
-          <img src="img/slide-image-4-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
-        </picture>
-      </div>
-
-      <div class="slide fade">
-        <picture>
-          <source srcset="img/slide-image-5-480x161.jpg" media="(max-width: 480px)">
-          <img src="img/slide-image-5-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
-        </picture>
-      </div>
-
-      <div class="slide fade">
-        <picture>
-          <source srcset="img/slide-image-6-480x161.jpg" media="(max-width: 480px)">
-          <img src="img/slide-image-6-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
-        </picture>
-      </div>
-
-      <div class="slide fade">
-        <picture>
-          <source srcset="img/slide-image-7-480x161.jpg" media="(max-width: 480px)">
-          <img src="img/slide-image-7-960x321.jpg" style="width: 100%; height: auto; object-fit: fill;">
-        </picture>
-      </div>
-
-      <!-- prev & next -->
-      <a class="prev" onclick="slideMove(-1)">&#10094;</a>
-      <a class="next" onclick="slideMove(1)">&#10095;</a>
-
+    <![endif]-->
+  </head>
+  <body>
+    <div class="banner">
+      <picture>
+        <source srcset="img/top-480x65.jpg" media="(max-width: 480px)" />
+        <source srcset="img/top-576x78.jpg" media="(max-width: 576px)" />
+        <source srcset="img/top-768x104.jpg" media="(max-width: 768px)" />
+        <img
+          src="img/top-960x130.jpg"
+          style="width: 100%; height: auto; object-fit: fill"
+          onclick="displaySection(0)"
+        />
+      </picture>
     </div>
 
-    <!-- dots
+    <div class="navbar">
+      <div class="container">
+        <img id="openMenu" src="img/menu.svg" alt="Menu" class="mobile-menu" />
+        <nav>
+          <img
+            id="closeMenu"
+            src="img/exit.svg"
+            alt="Exit"
+            class="mobile-menu-exit"
+          />
+          <ul>
+            <li><a href="#about" onclick="displaySection(1)">關於我們</a></li>
+            <li><a href="#partner" onclick="displaySection(2)">成為夥伴</a></li>
+            <li>
+              <a href="#products" onclick="displaySection(3)">饕家美饌</a>
+            </li>
+            <li>
+              <a href="#subsidery" onclick="displaySection(4)">門市查詢</a>
+            </li>
+            <li>
+              <a href="#customer" onclick="displaySection(5)">客服專區</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        const nav = document.querySelector("nav"),
+          mobileBtn = document.getElementById("openMenu"),
+          mobileBtnExit = document.getElementById("closeMenu");
+
+        mobileBtn.addEventListener("click", () => {
+          nav.classList.add("menu-btn");
+        });
+
+        mobileBtnExit.addEventListener("click", () => {
+          nav.classList.remove("menu-btn");
+        });
+      </script>
+    </div>
+
+    <div class="icon-bar">
+      <a href="#" class="member">
+        <img src="img/member.svg" />
+      </a>
+      <a href="#" class="shopping">
+        <img src="img/shopping.svg" />
+      </a>
+    </div>
+
+    <section id="welcome">
+      <!-- slides -->
+      <div class="slideShow">
+        <div class="slide fade">
+          <picture>
+            <source
+              srcset="img/slide-image-1-480x161.jpg"
+              media="(max-width: 480px)"
+            />
+            <img
+              src="img/slide-image-1-960x321.jpg"
+              style="width: 100%; height: auto; object-fit: fill"
+            />
+          </picture>
+        </div>
+
+        <div class="slide fade">
+          <picture>
+            <source
+              srcset="img/slide-image-2-480x161.jpg"
+              media="(max-width: 480px)"
+            />
+            <img
+              src="img/slide-image-2-960x321.jpg"
+              style="width: 100%; height: auto; object-fit: fill"
+            />
+          </picture>
+        </div>
+
+        <div class="slide fade">
+          <picture>
+            <source
+              srcset="img/slide-image-3-480x161.jpg"
+              media="(max-width: 480px)"
+            />
+            <img
+              src="img/slide-image-3-960x321.jpg"
+              style="width: 100%; height: auto; object-fit: fill"
+            />
+          </picture>
+        </div>
+
+        <div class="slide fade">
+          <picture>
+            <source
+              srcset="img/slide-image-4-480x161.jpg"
+              media="(max-width: 480px)"
+            />
+            <img
+              src="img/slide-image-4-960x321.jpg"
+              style="width: 100%; height: auto; object-fit: fill"
+            />
+          </picture>
+        </div>
+
+        <div class="slide fade">
+          <picture>
+            <source
+              srcset="img/slide-image-5-480x161.jpg"
+              media="(max-width: 480px)"
+            />
+            <img
+              src="img/slide-image-5-960x321.jpg"
+              style="width: 100%; height: auto; object-fit: fill"
+            />
+          </picture>
+        </div>
+
+        <div class="slide fade">
+          <picture>
+            <source
+              srcset="img/slide-image-6-480x161.jpg"
+              media="(max-width: 480px)"
+            />
+            <img
+              src="img/slide-image-6-960x321.jpg"
+              style="width: 100%; height: auto; object-fit: fill"
+            />
+          </picture>
+        </div>
+
+        <div class="slide fade">
+          <picture>
+            <source
+              srcset="img/slide-image-7-480x161.jpg"
+              media="(max-width: 480px)"
+            />
+            <img
+              src="img/slide-image-7-960x321.jpg"
+              style="width: 100%; height: auto; object-fit: fill"
+            />
+          </picture>
+        </div>
+
+        <!-- prev & next -->
+        <a class="prev" onclick="slideMove(-1)">&#10094;</a>
+        <a class="next" onclick="slideMove(1)">&#10095;</a>
+      </div>
+
+      <!-- dots
     <div style="text-align: center;">
       <span class="dot" onclick="goSlide(1)"></span>
       <span class="dot" onclick="goSlide(2)"></span>
     </div>
     -->
-    <script>
-      var slideIndex = 1;
-  
-      showSlide(slideIndex);
-  
-      function slideMove(n) {
-        showSlide(slideIndex += n);
-      }
-  
-      function goSlide(n) {
-        showSlide(slideIndex = n);
-      }
-  
-      function nextSlide() {
-        showSlide(slideIndex += 1);
-      }
-  
-      function showSlide(n) {
-        var i,
+      <script>
+        var slideIndex = 1;
+
+        showSlide(slideIndex);
+
+        function slideMove(n) {
+          showSlide((slideIndex += n));
+        }
+
+        function goSlide(n) {
+          showSlide((slideIndex = n));
+        }
+
+        function nextSlide() {
+          showSlide((slideIndex += 1));
+        }
+
+        function showSlide(n) {
+          var i,
             slides = document.getElementsByClassName("slide");
-  
-        slideIndex = (n > slides.length) ? 1 : slideIndex;
-        slideIndex = (n < 1) ? slides.length : slideIndex;
-  
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+
+          slideIndex = n > slides.length ? 1 : slideIndex;
+          slideIndex = n < 1 ? slides.length : slideIndex;
+
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+
+          slides[slideIndex - 1].style.display = "block";
+
+          setTimeout(nextSlide, 3000);
         }
-  
-        slides[slideIndex - 1].style.display = "block";
-  
-        setTimeout(nextSlide, 3000);
-      }
-    </script>
-  </section>
+      </script>
+    </section>
 
-  <section id="about">
-    <div class="container">
-      <div class="index">
-        <div class="indexHead">關於我們</div>
-        <ul class="indexBody">
-          <li>
-            <a href="#introduction" onclick="showAbout(0)">
-              <img src="img/button_before-160x43.png">
-              <span>企業簡介</span>
-            </a>
-          </li>
-          <li>
-            <a href="#philosophy" onclick="showAbout(1)">
-              <img src="img/button_before-160x43.png">
-              <span>經營理念</span>
-            </a>
-          </li>
-          <li>
-            <a href="#raw_material" onclick="showAbout(2)">
-              <img src="img/button_before-160x43.png">
-              <span>原料採用</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="contents">
-        <div id="introduction" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>企業簡介</h2>
-          </div>
-          <div class="contentBody">
-            <iframe width="90%" height="320" src="https://www.youtube.com/embed/qVnz1pSNmyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: 1em; border-radius: 5%;"></iframe>
-            <h2>四海之內揪朋友 ; 新鮮美味在遊龍</h2>
-            <h3>起源: 看到四海遊龍就想到鍋貼</h3>
-            <p>一九九三年，「四海遊龍」的第一塊招牌，在永和得和路的六合市場口豎立起來之後，從此改變了台灣的餐飲文化，四海遊龍讓鍋貼變成台灣《平民貴族美食》。</p>
-            <h3>發展: 四海遊龍-龍遊四海</h3>
-            <p>一九九九年獲得「顧客滿意金質獎」，二0一二年被消費者評選為「十大潛力加盟品牌」，不管在品質，還是品牌，都備受消費者肯定。四海遊龍LOGO上的龍，正代表著企業發展藍圖。多年以來我們一直希望能將東方的食物，推廣到西方成為全世界美食。四海遊龍希望落實這個夢想，跨出台灣遨遊四海，讓有華人的地方都能吃到美味鍋貼。</p>
-            <h3>20年的堅持與社會回饋</h3>
-            <p>為了堅持以最優良的品質回饋給廣大消費者，四海遊龍投入龐大人力、物力，每日天未亮從產地將原物料直接運送至中央廚房，分兩班生產、兩趟配送，以最新鮮、安全的品質分送至全台各門市。更希望藉由最貼心、便利及快速的門市服務，贏取消費者享用平價速食的第一選擇；並且以每年種下1001棵希望的樹苗，回饋滋養我們的土地。</p>
-            <p>Since the day Yuloong established its first brand board in the Liuhe Market on Yonghe Dehe Road in 1993, the food culture of Taiwan has been transformed, fried dumplings became the preference of both common people and the noble ones.</p>
-            <p>In 1999, Yuloong was given the “Golden Award for Customer Satisfaction”. In 2012, it was ranked among “the Ten Brands with the Biggest Potential for Franchise” by customers. Both the quality and the brand of Yuloong have won the recognition of consumers. The logo of Yuloong indeed stands for the development blueprint of the enterprise. Over the years, we have been hoping to spread Eastern fare to the West and even to the whole world. In order to realize this dream, Yuloong is in the process of branching out of Taiwan to the outside world, to make the delicious fried dumplings a regular fare in places where there are Chinese.</p>
-            <p>To guarantee all our customers the best quality of food, Yuloong contributes a huge quantity of manpower and material resources. Every day, from before the break of dawn, raw materials are sent from its origins directly to the central kitchen. Meanwhile, manpower is divided to produce and make delivery in two shifts to make sure every chain store gets the freshest food with the safest quality. We provide the most thoughtful, most convenient and quickest service in an effort to become the first choice of food with a reasonable price and fast service among customers. In addition, each year, Yuloong plants1001 Saplings of Hope, giving back to the land that nourishes us.</p>
-          </div>
+    <section id="about">
+      <div class="container">
+        <div class="index">
+          <div class="indexHead">關於我們</div>
+          <ul class="indexBody">
+            <li>
+              <a href="#introduction" onclick="showAbout(0)">
+                <img src="img/button_before-160x43.png" />
+                <span>企業簡介</span>
+              </a>
+            </li>
+            <li>
+              <a href="#philosophy" onclick="showAbout(1)">
+                <img src="img/button_before-160x43.png" />
+                <span>經營理念</span>
+              </a>
+            </li>
+            <li>
+              <a href="#raw_material" onclick="showAbout(2)">
+                <img src="img/button_before-160x43.png" />
+                <span>原料採用</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div id="philosophy" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>經營理念</h2>
-          </div>
-          <div class="contentBody">
-            <ul>
-              <li>
-                <p>以健康為主軸; 以服務為價值; 以股東為依歸; 以同仁為未來品質 Quality</p>
-                <p>堅持提升產品品質、服務品質、衛生品質。</p>
-              </li>
-              <li>
-                <p>創新 Innovation</p>
-                <p>不論在產品、服務、衛生、企業形象識別等各方面鼓勵全面創新。</p>
-              </li>
-              <li>
-                <p>顧客 Customer</p>
-                <p>以顧客立場，自我要求；客服專線：0800-22-44-66</p>
-              </li>
-              <li>
-                <p>速度 Speed</p>
-                <p>快速反應的回報決策機制，發揮高度的企業活力。</p>
-              </li>
-              <li>
-                <p>團隊 Teamwork</p>
-                <p>公司的成功來自各部門間細膩的分工與密切的團隊合作。</p>
-              </li>
-              <li>
-                <p>員工 Employee</p>
-                <p>全面開放加盟，讓有志年輕人有機會當頭家。</p>
-              </li>
-            </ul>
-            <h2>Yuloong Belief</h2>
-            <ul>
-              <li>Focusing on health, basing value on service.</li>
-              <li>Taking shareholders as our masters, our peers as our future.</li>
-              <li>Dedicated to raising the standard of our products, the quality of our service and the derivative quality.</li>
-              <li>Never lagging behind in aspects of product, service, derivation and enterprise brand recognition. Inspiring innovation in all areas.</li>
-              <li>Putting ourselves in the customers’ position, self-discipline, special hotline for customers.
-              </li>
-              <li>Rapid response mechanism for rewarding decision, inspiring high enterprise dynamics.</li>
-              <li>The company’s success stems from the meticulous division of labor and coordinated team work between departments.</li>
-              <li>Open alliance, making it possible for the youthto take thelead.</li>
-            </ul>
-          </div>
-        </div>
-        <div id="raw_material" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>原料採用</h2>
-          </div>
-          <div class="contentBody">
-            <h2>低溫電宰肉品</h2>  
-            <p>堅持採用本地〝生鮮〞、〝冷藏〞肉品，全程低溫配送確保鮮美肉質，非一般市售冷凍肉品。該協力廠商符合行政院衛生署檢驗規定，並通過農委會ＣＡＳ優良食品及ＨＡＣＣＰ兩項認證，讓您吃的安心、放心、開心。</p>
-            <h2>本地新鮮蔬菜</h2>
-            <p>每日由台灣南部產地直接新鮮配送，嚴格管控貨源品質及縮短運輸時程，堅持使用在地最新鮮、最及時的蔬菜。主要原料也採用品質優良且成本價格較高的韭黃（白韭菜），非一般廉價韭菜。為滿足消費者您對美食的挑剔，本公司敦聘各方學者專家指導及專業人員不斷研發，嚴格把關掌控衛生菜源，確保蔬菜無農藥殘留，不斷提昇品質精益求精，提供顧客最佳品質保證。</p>
-            <h2>Low temperature electrically cut meat</h2>
-            <p>We stick to the local freshly produced or frozen meat, which is nothing like common frozen meat on the market, and deliver the meat under low temperature to ensure its quality. The coordinating factory meets every regulation of the Public Health Department, and has passed the CAS Outstanding Food Certification and HACCP Certification, making sure that you enjoy our food free of concern.</p>
-            <h2>Local fresh vegetables</h2>
-            <p>The company signed contracts with farmers, making direct delivery from the field to our kitchen. All sources of raw materials are strictly controlled. And this method has shortened the time and length of our delivery, making it possible for us to use the freshest and the most timely vegetables for production. The main ingredient is a kind of white leek of high quality, different from the cheap ones. To meet your demanding appetite, the company hires scholars, professionals and experts from all walks of life to research and develop new products. By strictly controlling the source of vegetables, we make sure it is safe and there is no trace of pesticide remaining, sparing no effort to raise our standard, presenting the best quality for our customers.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>
-    var aboutContents = document.getElementById("about").getElementsByClassName("content");
-
-    showAbout(0);
-
-    function showAbout(n) {
-      for (i = 0; i < aboutContents.length; i++) {
-        aboutContents[i].style.display = (n == i) ? "block" : "none";
-      }
-    }
-    </script>
-  </section>
-
-  <section id="partner">
-    <div class="container">
-      <div class="index">
-        <div class="indexHead">成為夥伴</div>
-        <ul class="indexBody">
-          <li>
-            <a href="#join" onclick="showPartner(0)">
-              <img src="img/button_before-160x43.png">
-              <span>加盟辦法</span>
-            </a>
-          </li>
-          <li>
-            <a href="#franchise" onclick="showPartner(1)">
-              <img src="img/button_before-160x43.png">
-              <span>加盟金額</span>
-            </a>
-          </li>
-          <li>
-            <a href="#concerns" onclick="showPartner(2)">
-              <img src="img/button_before-160x43.png">
-              <span>加盟事宜</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.518.com.tw/company-G7M4p1.html" target="_blank">
-              <img src="img/button_before-160x43.png">
-              <span>求職辦法</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="contents">
-        <div id="join" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>加盟辦法</h2>
-          </div>
-          <div class="contentBody">
-            <div class="shop_pictures" style="display: flex; margin: 2em auto;">
-              <img src="img/shop_01.png" style="margin: 0 .5em;">
-              <img src="img/shop_02.png" style="margin: 0 .5em;">
-              <img src="img/shop_03.png" style="margin: 0 .5em;">
-              <img src="img/shop_04.png" style="margin: 0 .5em;">
+        <div class="contents">
+          <div id="introduction" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png" />
+              <h2>企業簡介</h2>
             </div>
-            <ul>
-              <li>加盟地區：全省</li>
-              <li>店面坪數：不拘</li>
-              <li>商圈保證：同商圈內無四海遊龍，且店面須經公司核定不影響其他門店</li>
-              <li>契約期間：三年，第四年起視營運狀況改為一年一簽</li>
-              <li>加盟經營：須專職經營 (夫妻倆共同創業為佳)</li>
-              <li>資金準備：標準約180~200萬</li>
-            </ul>
-
-            <p>創業專線：0800-55-88-48</p>
-
-            <h2>Yuloong Franchise Requirements</h2>
-            <ul>
-              <li>Franchise Area: all areas in the province</li>
-              <li>Dimension of the store: No requirements</li>
-              <li>Business Guarantee: No Yuloong store in the same business community, and it should also pass our assessment, making no interruption to other stores.</li>
-              <li>Contract time: 3 years (From the fourth year onwards, signing of the annual contract is done according to its operation status)</li>
-              <li>Franchise operation: Full time work (a couple running the business is preferred)</li>
-              <li>Capital Needed: about 1,800,000~2,000,000</li>
-
-              <p>Hotline for New Business:0800-55-88-48</p>
-            </ul>
+            <div class="contentBody">
+              <iframe
+                width="90%"
+                height="320"
+                src="https://www.youtube.com/embed/qVnz1pSNmyQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style="margin: 1em; border-radius: 5%"
+              ></iframe>
+              <h2>四海之內揪朋友 ; 新鮮美味在遊龍</h2>
+              <h3>起源: 看到四海遊龍就想到鍋貼</h3>
+              <p>
+                一九九三年，「四海遊龍」的第一塊招牌，在永和得和路的六合市場口豎立起來之後，從此改變了台灣的餐飲文化，四海遊龍讓鍋貼變成台灣《平民貴族美食》。
+              </p>
+              <h3>發展: 四海遊龍-龍遊四海</h3>
+              <p>
+                一九九九年獲得「顧客滿意金質獎」，二0一二年被消費者評選為「十大潛力加盟品牌」，不管在品質，還是品牌，都備受消費者肯定。四海遊龍LOGO上的龍，正代表著企業發展藍圖。多年以來我們一直希望能將東方的食物，推廣到西方成為全世界美食。四海遊龍希望落實這個夢想，跨出台灣遨遊四海，讓有華人的地方都能吃到美味鍋貼。
+              </p>
+              <h3>20年的堅持與社會回饋</h3>
+              <p>
+                為了堅持以最優良的品質回饋給廣大消費者，四海遊龍投入龐大人力、物力，每日天未亮從產地將原物料直接運送至中央廚房，分兩班生產、兩趟配送，以最新鮮、安全的品質分送至全台各門市。更希望藉由最貼心、便利及快速的門市服務，贏取消費者享用平價速食的第一選擇；並且以每年種下1001棵希望的樹苗，回饋滋養我們的土地。
+              </p>
+              <p>
+                Since the day Yuloong established its first brand board in the
+                Liuhe Market on Yonghe Dehe Road in 1993, the food culture of
+                Taiwan has been transformed, fried dumplings became the
+                preference of both common people and the noble ones.
+              </p>
+              <p>
+                In 1999, Yuloong was given the “Golden Award for Customer
+                Satisfaction”. In 2012, it was ranked among “the Ten Brands with
+                the Biggest Potential for Franchise” by customers. Both the
+                quality and the brand of Yuloong have won the recognition of
+                consumers. The logo of Yuloong indeed stands for the development
+                blueprint of the enterprise. Over the years, we have been hoping
+                to spread Eastern fare to the West and even to the whole world.
+                In order to realize this dream, Yuloong is in the process of
+                branching out of Taiwan to the outside world, to make the
+                delicious fried dumplings a regular fare in places where there
+                are Chinese.
+              </p>
+              <p>
+                To guarantee all our customers the best quality of food, Yuloong
+                contributes a huge quantity of manpower and material resources.
+                Every day, from before the break of dawn, raw materials are sent
+                from its origins directly to the central kitchen. Meanwhile,
+                manpower is divided to produce and make delivery in two shifts
+                to make sure every chain store gets the freshest food with the
+                safest quality. We provide the most thoughtful, most convenient
+                and quickest service in an effort to become the first choice of
+                food with a reasonable price and fast service among customers.
+                In addition, each year, Yuloong plants1001 Saplings of Hope,
+                giving back to the land that nourishes us.
+              </p>
+            </div>
           </div>
-        </div>
-        <div id="franchise" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>加盟金額</h2>
+          <div id="philosophy" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png" />
+              <h2>經營理念</h2>
+            </div>
+            <div class="contentBody">
+              <ul>
+                <li>
+                  <p>
+                    以健康為主軸; 以服務為價值; 以股東為依歸; 以同仁為未來品質
+                    Quality
+                  </p>
+                  <p>堅持提升產品品質、服務品質、衛生品質。</p>
+                </li>
+                <li>
+                  <p>創新 Innovation</p>
+                  <p>
+                    不論在產品、服務、衛生、企業形象識別等各方面鼓勵全面創新。
+                  </p>
+                </li>
+                <li>
+                  <p>顧客 Customer</p>
+                  <p>以顧客立場，自我要求；客服專線：0800-22-44-66</p>
+                </li>
+                <li>
+                  <p>速度 Speed</p>
+                  <p>快速反應的回報決策機制，發揮高度的企業活力。</p>
+                </li>
+                <li>
+                  <p>團隊 Teamwork</p>
+                  <p>公司的成功來自各部門間細膩的分工與密切的團隊合作。</p>
+                </li>
+                <li>
+                  <p>員工 Employee</p>
+                  <p>全面開放加盟，讓有志年輕人有機會當頭家。</p>
+                </li>
+              </ul>
+              <h2>Yuloong Belief</h2>
+              <ul>
+                <li>Focusing on health, basing value on service.</li>
+                <li>
+                  Taking shareholders as our masters, our peers as our future.
+                </li>
+                <li>
+                  Dedicated to raising the standard of our products, the quality
+                  of our service and the derivative quality.
+                </li>
+                <li>
+                  Never lagging behind in aspects of product, service,
+                  derivation and enterprise brand recognition. Inspiring
+                  innovation in all areas.
+                </li>
+                <li>
+                  Putting ourselves in the customers’ position, self-discipline,
+                  special hotline for customers.
+                </li>
+                <li>
+                  Rapid response mechanism for rewarding decision, inspiring
+                  high enterprise dynamics.
+                </li>
+                <li>
+                  The company’s success stems from the meticulous division of
+                  labor and coordinated team work between departments.
+                </li>
+                <li>
+                  Open alliance, making it possible for the youthto take
+                  thelead.
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="contentBody">
-
-            <h2>創業準備金約200萬元起(視承租店面而定)</h2>
-            <ul>
-              <li>加盟金：10萬元</li>
-              <li>保證金：20萬元</li>
-              <li>裝潢、硬體設施、機器設備 : 150~180萬元</li>
-              <li>人力支援：總公司提供人員到店輔導營運、人力支援</li>
-              <li>以上不含：房屋押金、押金、周轉金、5%營業稅</li>
-            </ul>
-
-            <h2>Capital Requirement</h2>
-            <ul>
-              <li>Franchise Fee: 100,000</li>
-              <li>Cash Deposit: 200,000</li>
-              <li>Money for decoration, hardware and machines: 1,500,000~1,800,000</li>
-              <li>Personnel support: Headquarters will provide personnel for new branches to help with the construction and human resources management.
-              <p>All items above don't include residence cash pledge, cash pledge, working fund and 5% of business tax.</p>
-              </li>
-              <li>Amount required: about 2,000,000 and over (depending on the size of the store)</li>
-            </ul>
-
-          </div>
-        </div>
-        <div id="concerns" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>加盟事宜</h2>
-          </div>
-          <div class="contentBody">
-            <ul>
-              <li>
-                <h2>加盟流程</h2>
-                <img src="img/join-flow.png">
-              </li>
-              <li>
-                <h2>加盟相關事宜</h2>
-                <ul>
-                  <li>訓練：依訓練時數及公司考核結果而定</li>
-                  <li>裝潢：21天完工(工作天)</li>
-                </ul>
-              </li>
-              <li>
-                <h2>Franchise concerns</h2>
-                <ul>
-                  <li>Training: according to training hours and the company assessment</li>
-                  <li>Decoration: completed in 21 days (working day)</li>
-                </ul>
-              </li>
-            </ul> 
+          <div id="raw_material" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png" />
+              <h2>原料採用</h2>
+            </div>
+            <div class="contentBody">
+              <h2>低溫電宰肉品</h2>
+              <p>
+                堅持採用本地〝生鮮〞、〝冷藏〞肉品，全程低溫配送確保鮮美肉質，非一般市售冷凍肉品。該協力廠商符合行政院衛生署檢驗規定，並通過農委會ＣＡＳ優良食品及ＨＡＣＣＰ兩項認證，讓您吃的安心、放心、開心。
+              </p>
+              <h2>本地新鮮蔬菜</h2>
+              <p>
+                每日由台灣南部產地直接新鮮配送，嚴格管控貨源品質及縮短運輸時程，堅持使用在地最新鮮、最及時的蔬菜。主要原料也採用品質優良且成本價格較高的韭黃（白韭菜），非一般廉價韭菜。為滿足消費者您對美食的挑剔，本公司敦聘各方學者專家指導及專業人員不斷研發，嚴格把關掌控衛生菜源，確保蔬菜無農藥殘留，不斷提昇品質精益求精，提供顧客最佳品質保證。
+              </p>
+              <h2>Low temperature electrically cut meat</h2>
+              <p>
+                We stick to the local freshly produced or frozen meat, which is
+                nothing like common frozen meat on the market, and deliver the
+                meat under low temperature to ensure its quality. The
+                coordinating factory meets every regulation of the Public Health
+                Department, and has passed the CAS Outstanding Food
+                Certification and HACCP Certification, making sure that you
+                enjoy our food free of concern.
+              </p>
+              <h2>Local fresh vegetables</h2>
+              <p>
+                The company signed contracts with farmers, making direct
+                delivery from the field to our kitchen. All sources of raw
+                materials are strictly controlled. And this method has shortened
+                the time and length of our delivery, making it possible for us
+                to use the freshest and the most timely vegetables for
+                production. The main ingredient is a kind of white leek of high
+                quality, different from the cheap ones. To meet your demanding
+                appetite, the company hires scholars, professionals and experts
+                from all walks of life to research and develop new products. By
+                strictly controlling the source of vegetables, we make sure it
+                is safe and there is no trace of pesticide remaining, sparing no
+                effort to raise our standard, presenting the best quality for
+                our customers.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <script>
-    var partnerContents = document.getElementById("partner").getElementsByClassName("content");
+      <script>
+        var aboutContents = document
+          .getElementById("about")
+          .getElementsByClassName("content");
 
-    showPartner(0);
+        showAbout(0);
 
-    function showPartner(n) {
-        for (i = 0; i < partnerContents.length; i++) {
-          partnerContents[i].style.display = (n == i) ? "block" : "none";
+        function showAbout(n) {
+          for (i = 0; i < aboutContents.length; i++) {
+            aboutContents[i].style.display = n == i ? "block" : "none";
+          }
         }
-      }
-    </script>
-  </section>
+      </script>
+    </section>
 
-  <section id="products">
-    <div class="menuPage">
+    <section id="partner">
+      <div class="container">
+        <div class="index">
+          <div class="indexHead">成為夥伴</div>
+          <ul class="indexBody">
+            <li>
+              <a href="#join" onclick="showPartner(0)">
+                <img src="img/button_before-160x43.png" />
+                <span>加盟辦法</span>
+              </a>
+            </li>
+            <li>
+              <a href="#franchise" onclick="showPartner(1)">
+                <img src="img/button_before-160x43.png" />
+                <span>加盟金額</span>
+              </a>
+            </li>
+            <li>
+              <a href="#concerns" onclick="showPartner(2)">
+                <img src="img/button_before-160x43.png" />
+                <span>加盟事宜</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.518.com.tw/company-G7M4p1.html"
+                target="_blank"
+              >
+                <img src="img/button_before-160x43.png" />
+                <span>求職辦法</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contents">
+          <div id="join" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png" />
+              <h2>加盟辦法</h2>
+            </div>
+            <div class="contentBody">
+              <div
+                class="shop_pictures"
+                style="display: flex; margin: 2em auto"
+              >
+                <img src="img/shop_01.png" style="margin: 0 0.5em" />
+                <img src="img/shop_02.png" style="margin: 0 0.5em" />
+                <img src="img/shop_03.png" style="margin: 0 0.5em" />
+                <img src="img/shop_04.png" style="margin: 0 0.5em" />
+              </div>
+              <ul>
+                <li>加盟地區：全省</li>
+                <li>店面坪數：不拘</li>
+                <li>
+                  商圈保證：同商圈內無四海遊龍，且店面須經公司核定不影響其他門店
+                </li>
+                <li>契約期間：三年，第四年起視營運狀況改為一年一簽</li>
+                <li>加盟經營：須專職經營 (夫妻倆共同創業為佳)</li>
+                <li>資金準備：標準約180~200萬</li>
+              </ul>
 
-      <h1>饕家美食</h1>
-      <div class="menu">
-        <a href="#fried-dumping" onclick="showDishes(0)">
-          <img src="img/menu/0101招牌鍋貼.jpg" alt="鍋貼">
-          <span class="bottom-left">鍋貼</span>
-        </a>
-        <a href="#dumpling" onclick="showDishes(1)">
-          <img src="img/menu/0201招牌水餃 .jpg">
-          <span class="bottom-left">水餃</span>
-        </a>
-        <a href="#noodles" onclick="showDishes(2)">
-          <img src="img/menu/0301牛肉麵(含6塊牛肉).jpg">
-          <span class="bottom-left">麵類</span>
-        </a>
-        <a href="#soup" onclick="showDishes(3)">
-          <img src="img/menu/0401牛肉湯(含3塊牛肉).jpg">
-          <span class="bottom-left">湯品</span>
-        </a>
-        <a href="#drink" onclick="showDishes(4)">
-         <img src="img/menu/0501豆漿.jpg">
-         <span class="bottom-left">飲品</span>
-        </a>
-        <a href="#side-dish" onclick="showDishes(5)">
-          <img src="img/menu/0601豬耳朵.jpg">
-          <span class="bottom-left">小菜</span>
-        </a>
-      </div>
+              <p>創業專線：0800-55-88-48</p>
 
-    </div>
+              <h2>Yuloong Franchise Requirements</h2>
+              <ul>
+                <li>Franchise Area: all areas in the province</li>
+                <li>Dimension of the store: No requirements</li>
+                <li>
+                  Business Guarantee: No Yuloong store in the same business
+                  community, and it should also pass our assessment, making no
+                  interruption to other stores.
+                </li>
+                <li>
+                  Contract time: 3 years (From the fourth year onwards, signing
+                  of the annual contract is done according to its operation
+                  status)
+                </li>
+                <li>
+                  Franchise operation: Full time work (a couple running the
+                  business is preferred)
+                </li>
+                <li>Capital Needed: about 1,800,000~2,000,000</li>
 
-    <div id="fried-dumpling" class="dishPage">
-
-      <h1><span onclick="showMenu()">饕家美食</span>/鍋貼</h1>
-      <div class="dishes">
-        <div class="dish">
-          <img src="img/menu/0101招牌鍋貼.jpg">
-          <p>招牌鍋貼</p>
-          <p>金黃色現煎的香酥脆皮，<br>配上飽含餡汁的鮮甜肉餡，嚼勁十足！<br>手工現包鍋貼才嚐得到的新鮮滋味，<br>每吃一口，都洋溢著滿滿的幸福美味！<br>鍋貼達人 滿分推薦！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0102韭菜鍋貼.jpg">
-          <p>韭菜鍋貼</p>
-          <p>些微辛辣、些微甘甜的韭菜，<br>搭配精選豬肉餡的韭菜鍋貼，<br>豐富的纖維素、鐵、葉綠素，<br>一口咬下，香脆滿溢！是不可多得鍋貼聖品！<br>給您滿滿的活力元氣！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0103辣味鍋貼.jpg">
-          <p>辣味鍋貼</p>
-          <p>取自四海遊龍不傳秘方：<br>自製韓式香辣醬汁，<br>配上焦黃酥脆的油煎肉餡，<br>辣而不嗆、極至順口！<br>喜愛嚐鮮嗜辣的您絕不能錯過的絕美佳餚！</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="dumpling" class="dishPage">
-      <h1><span onclick="showMenu()">饕家美食</span>/水餃</h1>
-      <div class="dishes">
-        <div class="dish">
-          <img src="img/menu/0201招牌水餃 .jpg">
-          <p>招牌水餃</p>
-          <p>採用現宰上等豬肉，<br>搭配雲林嚴選鮮翠高麗菜，<br>混合獨家調味，呈現食材的自然鮮美！<br>皮Q飽滿有彈性，<br>一口咬下鮮美四溢、齒頰留香！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0202綠皮韭菜水餃.jpg">
-          <p>綠皮韭菜水餃</p>
-          <p>每顆翠綠色的韭菜水餃，<br>都經由SGS檢驗合格的綠藻粉調配而成。<br>鮮綠的外衣給您百分百的純正美味，<br>健康飽滿的內餡給您豐富的味蕾享受；<br>融合了美味與健康，絕對贏得您的青睞。</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0203辣味水餃.jpg">
-          <p>辣味水餃</p>
-          <p>可愛的元寶外型，<br>卻透著微紅的香辣口感；<br>獨家的泡菜與肉末的巧妙結合，<br>皮薄餡飽、辣而不膩！<br>辣的夠味，辣的好吃！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0204紅油抄手.jpg">
-          <p>紅油抄手</p>
-          <p>滑溜順口鮮Q抄手，<br>淋上獨家傳承調製、<br>麻中帶辣的紅辣油，<br>微麻的辣勁夾帶著香醇甘甜……<br>爆香純正的好料理讓您愛不擇手、一口接一口！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0205鮮蝦水餃.jpg">
-          <p>鮮蝦水餃</p>
-          <p>鮮蝦的肉質Q彈、外加上豬肉的絕香口感、<br>高麗菜的甜爽組成絕妙的搭配！<br>更襯托出肉餡的自然鮮美，<br>一口吃下，香濃鮮美的口感，<br>保證讓人回味無窮！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0206玉米水餃.jpg">
-          <p>玉米水餃</p>
-          <p>飽滿多汁玉米粒搭配溫體豬肉，<br>獨特香甜風味，大人小朋友的最愛喔~<br>且皆採用非基因改造玉米，<br>在店裡舉筷已是讚不絕口！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0207蔬菜水餃.jpg">
-          <p>蔬菜水餃</p>
-          <p>蔬菜水餃顆顆飽滿，清脆多汁紮實內餡！<br>皮薄Q軟，餡料豐富，滿滿蔬菜甜味 美味有層次！<br>煮水餃簡單快速上桌，又能讓您吃到滿滿蔬菜！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0208生水餃.jpg">
-          <p>生水餃</p>
-          <p>飽滿內餡，鮮嫩夠味!<br>手工現包的香Q口感，<br>飽實多汁不油膩，<br>買回家滾水現煮大快朵頤根本就是剛剛好，<br>不沾醬也很夠味!</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0209鮮蝦生水餃.jpg">
-          <p>鮮蝦生水餃</p>
-          <p>內餡鮮蝦飽實多汁，<br>豬肉鮮美香甜不膩，<br>在店裡舉筷已是讚不絕口！<br>帶回家品嚐更讓人垂涎不已！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0210牛肉湯餃.jpg">
-          <p>牛肉湯餃</p>
-          <p>濃郁的牛肉湯頭，<br>搭配上皮Q飽滿的招牌水餃，<br>香濃鮮甜的紅燒高湯巧妙地將水餃內餡完全混搭，<br>迷人的香氣讓人魅力無法擋！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0211酸辣湯餃.jpg">
-          <p>酸辣湯餃</p>
-          <p>料多味美、純正至極的酸辣湯底，<br>搭配肉餡飽滿、香甜美味的招牌水餃，<br>兩者合而為一，一口咬下，<br>又是道地山東酸辣口感，<br>濃濃水餃鮮味突然湧現……愈嚼愈有味！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0212咖哩雞水餃.jpg">
-          <p>咖哩雞水餃</p>
-          <p>咖哩雞是以雞肉、土豆、咖哩粉、胡蘿蔔、洋蔥<br>為主要食材製作而成的一道菜餚。<br>具備以鹹鮮口味為主，略帶甜辣，咖哩味濃厚的口感</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="noodles" class="dishPage">
-      <h1><span onclick="showMenu()">饕家美食</span>/麵類</h1>
-      <div class="dishes">
-        <div class="dish">
-         <img src="img/menu/0301牛肉麵(含6塊牛肉).jpg">
-          <p>牛肉麵</p>
-          <p>精選上選牛腱，配上祖傳藥材秘方，<br>慢火熬煮八小時，湯頭濃郁、<br>肉質鮮美、紮實嚼勁、<br>道地川味……令人意猶未盡！<br>麵條Q彈，口感滿分，是人氣超旺之經典美食！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0302牛肉乾拌麵.jpg">
-          <p>牛肉乾拌麵</p>
-          <p>麵條裡吸滿飽飽清甜濃郁、<br>溫潤微辣的牛肉高湯，<br>Q彈有勁、口感十足，<br>每一口咬下都能有鮮美甘甜的美味感動！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0303牛肉醬拌麵.jpg">
-          <p>牛肉醬拌麵</p>
-          <p>濃厚的牛肉醬與麵條的完美結合、<br>加上微辣口感的特製牛油，<br>香而不膩、辣而不嗆，<br>這樣的美味讓人回味無窮！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0304餛飩麵.jpg">
-          <p>餛飩麵</p>
-          <p>精選肥瘦適中的上等豬肉，<br>口感鮮嫩不油膩，<br>搭配晶瑩Q滑的薄皮，<br>及嚼勁十足的麵條，簡直絕配!</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0305肉燥拌麵.jpg">
-          <p>肉燥拌麵</p>
-          <p>採用新鮮豬肉加上濃郁滷汁，<br>長時間燉煮之後的美味多汁肉燥，<br> 搭配香滑彈性手工家常麵，<br>就是無法抗拒的古早味肉燥麵！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0306牛肉湯麵.jpg">
-          <p>牛肉湯麵</p>
-          <p>想喝口香醇的牛肉湯<br>又不想餐餐大魚大肉<br>牛肉湯麵絕對是最佳選擇<br>而且還附上一整顆滷蛋<br>除了飽足和營養之外<br>超值的價格<br>不讓您的荷包大失血喔</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0307酸辣麵.jpg">
-          <p>酸辣麵</p>
-          <p>原本就充滿層次口感的酸辣湯，<br>搭配香滑彈性手工麵條，<br>因此更增添了滿足感及飽足感</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0308川味擔擔麵.jpg">
-          <p>川味擔擔麵</p>
-          <p>淋上獨門哨子醬的川味擔擔麵，<br>香氣十足及豐富的層次，<br>微辣的口感，好吃的讓人停不下來！</p>
-        </div>
-        <div class="dish">
-          <img src="img/menu/0309塔香辣肉醬麵.jpg">
-          <p>塔香辣肉醬麵</p>
-          <p>塔香辣肉醬麵，色自然、鮮味美、<br>辣夠味、麵嚼香‧鮮甜味美、辣勁夠味、<br>塔香濃郁，讓你念念不忘的好味道！</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="soup" class="dishPage">
-    <h1><span onclick="showMenu()">饕家美食</span>/湯品</h1>
-    <div class="dishes">
-      <div class="dish">
-        <img src="img/menu/0401牛肉湯(含3塊牛肉).jpg">
-        <p>牛肉湯</p>
-        <p>新鮮尼加拉瓜上選牛腱足足三大塊<br>湯底是每天清晨用牛大骨細火慢熬<br>費時六小時才有的自然鮮甜<br>搭配本地每日現採新鮮蔬菜<br>再灑上滿滿蔥花<br>最適合犒賞天天辛苦工作的自己</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0402酸辣湯.jpg">
-        <p>酸辣湯</p>
-        <p>食材需細心切成絲狀，<br>再與濃郁的湯頭一起熬煮，<br>喝起來口感豐富，湯頭的鮮美酸辣並陳，<br>胡椒粉漂浮湯上，整碗色香味俱全，<br>真可說是一種平凡又美味的幸福</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0403台南虱目魚丸湯.jpg">
-        <p>台南虱目魚丸湯</p>
-        <p>使用新鮮虱目魚細膩調味製出的美味魚丸，<br>搭配豬骨熬成的鮮甜清湯，<br>鮮甜又美味。</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0404貢丸湯.jpg">
-        <p>貢丸湯</p>
-        <p>精選肥瘦適中的上等豬肉，<br>充分調味制出的美味貢丸，<br>搭配豬骨熬成的鮮甜清湯，爽口又好喝</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0405港式玉米濃湯.jpg">
-        <p>港式玉米濃湯</p>
-        <p>嚴選高品質的玉米食材，<br>豐富營養、口感滿分！<br>新鮮蛋花搭配濃郁香甜的味美高湯，<br>大人小孩都愛呷！</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0406餛飩湯.jpg">
-        <p>餛飩湯</p>
-        <p>精選肥瘦適中的上等豬肉，<br>口感鮮嫩不油膩，搭配晶瑩Q滑的薄皮<br>及豬骨熬成的鮮甜清湯，<br>自然爽口又夠味!<br>簡單實在的好味道，<br>推薦您一起來品嘗</p>
-      </div>
-    </div>
-    </div>
-
-    <div id="drink" class="dishPage">
-    <h1><span onclick="showMenu()">饕家美食</span>/飲品</h1>
-    <div class="dishes">
-      <div class="dish">
-        <img src="img/menu/0501豆漿.jpg">
-        <p>豆漿</p>
-        <p>本公司使用高優質<span style="color: red;">非基因改造黃豆</span><br>濃‧醇‧健康，營養好喝的健康聖品<br>豆漿中富含植物性蛋白質、大豆異黃酮、大豆纖維、<br>維生素、鐵、鈣等物質，更有『綠色牛奶』的美名!<br>一天一杯豆漿，讓您活力多更多!!</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0502杏仁豆漿.jpg">
-        <p>杏仁豆漿</p>
-        <p>非食用時請冷藏於0~5℃，<br>以便提高您的賞味期限。<br>若有沉澱乃黃豆纖維屬正常現象，<br>飲用前請先搖晃數下，風味更佳!!</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0503紅茶豆漿.jpg">
-        <p>紅茶豆漿</p>
-        <p>天然麥香紅茶，與濃郁豆漿相互結合，<br>以獨門不傳的黃金比例，<br>讓東、西方的解渴飲品合而為一！<br>冰涼中帶有甜美滋味，值得您細細品味！</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0504仙草茶.jpg">
-        <p>仙草茶</p>
-        <p>沁涼爽口、甜而不膩，<br>以自然仙草自行提煉<br>是炎炎夏日抗暑的最佳飲品！</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0505仙草凍.jpg">
-        <p>仙草凍</p>
-        <p>仙草又稱【仙人草】<br>以膠質含量高而聞名，是自然涼補的常用藥材，<br>自古以來，仙草一直是夏日經常食用的消暑聖品。<br>茶餘飯後來杯清涼解膩的仙草凍，令人神清氣爽。</p>
-      </div>
-    </div>
-    </div>
-
-    <div id="side-dish" class="dishPage">
-    <h1><span onclick="showMenu()">饕家美食</span>/小菜</h1>
-    <div class="dishes">
-      <div class="dish">
-        <img src="img/menu/0601豬耳朵.jpg">
-        <p>豬耳朵</p>
-        <p>孕含豐富膠質、鈣質與蛋白質，<br>再用冰糖、八角等獨門香料醃製而成的豬耳朵，<br>又香又脆，是絕佳的開胃下酒菜！</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0602豆干絲.jpg">
-        <p>豆干絲</p>
-        <p>清爽可口、紮實帶Q，含有豐富蛋白質，<br>配上爽脆的芹菜與紅蘿蔔絲，<br>是居家下酒的最佳良伴！</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0603涼拌黃瓜.jpg">
-        <p>涼拌黃瓜</p>
-        <p>新鮮翠綠的鮮甜小黃瓜，<br>用著冰糖與蒜末醃製而成的清脆口感，<br>冰涼、爽口！</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0604泡菜.jpg">
-        <p>泡菜</p>
-        <p>正宗台式泡菜<br>酸溜帶勁、堪稱一絕<br>每天清晨新鮮現採本土高麗菜<br>與本地辛勤菜農長期合作、嚴選最高品質<br>堅持每日兩趟新鮮配送<br>美味不打折</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0605滷蛋.jpg">
-        <p>滷蛋</p>
-        <p>上選雞蛋，經由獨特滷汁精釀烹製；<br>吃起來香滑有勁、Q彈夠味！蛋黃入味香濃、<br>唇齒留香，是小菜中不可或缺的營養補給唷！</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0606皮蛋豆腐.jpg">
-        <p>皮蛋豆腐</p>
-        <p>嚴選高品質皮蛋<br>特殊香味、自然濃郁<br>非基因改造黃豆製成的豆腐<br>冰冰涼涼、口感滑嫩<br>淋上四海遊龍獨門醬汁<br>健康、美味同時擁有</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0607海帶絲.jpg">
-        <p>海帶絲</p>
-        <p>嚴選新鮮海帶絲，<br>配上獨家不傳醬料及新鮮蒜頭醃製而成，<br>健康爽脆又開胃！</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0608涼拌木耳.jpg">
-        <p>涼拌木耳</p>
-        <p>黑木耳又可以稱作『雲耳』，<br>涼拌木耳口感脆脆，<br>酸酸甜甜又開胃！<br>低卡低熱量，當作零嘴來吃，<br>也不怕負擔太重！</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0609牛蒡絲.jpg">
-        <p>牛蒡絲</p>
-        <p>牛蒡絲含豐富纖維素及對人體健康有益的多醣體，<br>芝麻含有豐富的必需脂肪酸及維生素E的養生聖品，<br>適合在用餐後幫腸胃中和一下，<br>口感清脆的牛蒡絲拌入鹹甜酸醬汁調味，<br>飯前飯後必備的美味涼拌美食</p>
-      </div>
-      <div class="dish">
-        <img src="img/menu/0610紅油筍片.jpg">
-        <p>紅油筍片</p>
-        <p>嚴選台灣在地新鮮高山竹筍，搭配香純的麻油製作而成，<br>取用新鮮嫩筍製成、口味甘香酸辣，且竹筍富含豐富纖維，<br>是不可或缺的家常小菜，不添加防腐劑！保留食物色原味，<br>口感絕佳，開胃健康好滋味～</p>
-      </div>
-    </div>
-    </div>
-
-    <script> /* page switch */
-      var
-        menu = document.getElementsByClassName("menuPage"),
-        dishes = document.getElementsByClassName("dishPage");
-
-      function showMenu() {
-        menu[0].style.display = "block";
-        for (i = 0; i < dishes.length; i++)
-          dishes[i].style.display = "none";
-      }
-
-      function showDishes(n) {
-        menu[0].style.display = "none";
-        for (i = 0; i < dishes.length; i++) {
-          dishes[i].style.display = (n == i) ? "block" : "none";
-        }
-      }
-    </script>
-  </section>
-
-  <section id="subsidery">
-    <h1 style="border-bottom: 2px solid black;">門市查詢</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29233.771145557796!2d120.2914441!3d23.6680394!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stw!4v1624717859385!5m2!1sen!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
-  <section id="customer">
-    <div class="container">
-      <div class="index">
-        <div class="indexHead">客服專區</div>
-        <ul class="indexBody">
-          <li>
-            <a href="#joinFaq" onclick="showCustomer(0)">
-              <img src="img/button_before-160x43.png">
-              <span>加盟FAQ</span>
-            </a>
-          </li>
-          <li>
-            <a href="#foodFaq" onclick="showCustomer(1)">
-              <img src="img/button_before-160x43.png">
-              <span>食材FAQ</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact" onclick="showCustomer(2)">
-              <img src="img/button_before-160x43.png">
-              <span>客服專線</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="contents">
-        <div id="joinFaq" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>加盟FAQ</h2>
+                <p>Hotline for New Business:0800-55-88-48</p>
+              </ul>
+            </div>
           </div>
+          <div id="franchise" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png" />
+              <h2>加盟金額</h2>
+            </div>
+            <div class="contentBody">
+              <h2>創業準備金約200萬元起(視承租店面而定)</h2>
+              <ul>
+                <li>加盟金：10萬元</li>
+                <li>保證金：20萬元</li>
+                <li>裝潢、硬體設施、機器設備 : 150~180萬元</li>
+                <li>人力支援：總公司提供人員到店輔導營運、人力支援</li>
+                <li>以上不含：房屋押金、押金、周轉金、5%營業稅</li>
+              </ul>
+
+              <h2>Capital Requirement</h2>
+              <ul>
+                <li>Franchise Fee: 100,000</li>
+                <li>Cash Deposit: 200,000</li>
+                <li>
+                  Money for decoration, hardware and machines:
+                  1,500,000~1,800,000
+                </li>
+                <li>
+                  Personnel support: Headquarters will provide personnel for new
+                  branches to help with the construction and human resources
+                  management.
+                  <p>
+                    All items above don't include residence cash pledge, cash
+                    pledge, working fund and 5% of business tax.
+                  </p>
+                </li>
+                <li>
+                  Amount required: about 2,000,000 and over (depending on the
+                  size of the store)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="concerns" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png" />
+              <h2>加盟事宜</h2>
+            </div>
+            <div class="contentBody">
+              <ul>
+                <li>
+                  <h2>加盟流程</h2>
+                  <img src="img/join-flow.png" />
+                </li>
+                <li>
+                  <h2>加盟相關事宜</h2>
+                  <ul>
+                    <li>訓練：依訓練時數及公司考核結果而定</li>
+                    <li>裝潢：21天完工(工作天)</li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Franchise concerns</h2>
+                  <ul>
+                    <li>
+                      Training: according to training hours and the company
+                      assessment
+                    </li>
+                    <li>Decoration: completed in 21 days (working day)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var partnerContents = document
+          .getElementById("partner")
+          .getElementsByClassName("content");
+
+        showPartner(0);
+
+        function showPartner(n) {
+          for (i = 0; i < partnerContents.length; i++) {
+            partnerContents[i].style.display = n == i ? "block" : "none";
+          }
+        }
+      </script>
+    </section>
+
+    <section id="products">
+      <div class="menuPage">
+        <h1>饕家美食</h1>
+        <div class="menu">
+          <a href="#fried-dumping" onclick="showDishes(0)">
+            <img src="img/menu/0101招牌鍋貼.jpg" alt="鍋貼" />
+            <span class="bottom-left">鍋貼</span>
+          </a>
+          <a href="#dumpling" onclick="showDishes(1)">
+            <img src="img/menu/0201招牌水餃 .jpg" />
+            <span class="bottom-left">水餃</span>
+          </a>
+          <a href="#noodles" onclick="showDishes(2)">
+            <img src="img/menu/0301牛肉麵(含6塊牛肉).jpg" />
+            <span class="bottom-left">麵類</span>
+          </a>
+          <a href="#soup" onclick="showDishes(3)">
+            <img src="img/menu/0401牛肉湯(含3塊牛肉).jpg" />
+            <span class="bottom-left">湯品</span>
+          </a>
+          <a href="#drink" onclick="showDishes(4)">
+            <img src="img/menu/0501豆漿.jpg" />
+            <span class="bottom-left">飲品</span>
+          </a>
+          <a href="#side-dish" onclick="showDishes(5)">
+            <img src="img/menu/0601豬耳朵.jpg" />
+            <span class="bottom-left">小菜</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="fried-dumpling" class="dishPage">
+        <h1><span onclick="showMenu()">饕家美食</span>/鍋貼</h1>
+        <div class="dishes">
+          <div class="dish">
+            <img src="img/menu/0101招牌鍋貼.jpg" />
+            <p>招牌鍋貼</p>
+            <p>
+              金黃色現煎的香酥脆皮，<br />配上飽含餡汁的鮮甜肉餡，嚼勁十足！<br />手工現包鍋貼才嚐得到的新鮮滋味，<br />每吃一口，都洋溢著滿滿的幸福美味！<br />鍋貼達人
+              滿分推薦！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0102韭菜鍋貼.jpg" />
+            <p>韭菜鍋貼</p>
+            <p>
+              些微辛辣、些微甘甜的韭菜，<br />搭配精選豬肉餡的韭菜鍋貼，<br />豐富的纖維素、鐵、葉綠素，<br />一口咬下，香脆滿溢！是不可多得鍋貼聖品！<br />給您滿滿的活力元氣！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0103辣味鍋貼.jpg" />
+            <p>辣味鍋貼</p>
+            <p>
+              取自四海遊龍不傳秘方：<br />自製韓式香辣醬汁，<br />配上焦黃酥脆的油煎肉餡，<br />辣而不嗆、極至順口！<br />喜愛嚐鮮嗜辣的您絕不能錯過的絕美佳餚！
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="dumpling" class="dishPage">
+        <h1><span onclick="showMenu()">饕家美食</span>/水餃</h1>
+        <div class="dishes">
+          <div class="dish">
+            <img src="img/menu/0201招牌水餃 .jpg" />
+            <p>招牌水餃</p>
+            <p>
+              採用現宰上等豬肉，<br />搭配雲林嚴選鮮翠高麗菜，<br />混合獨家調味，呈現食材的自然鮮美！<br />皮Q飽滿有彈性，<br />一口咬下鮮美四溢、齒頰留香！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0202綠皮韭菜水餃.jpg" />
+            <p>綠皮韭菜水餃</p>
+            <p>
+              每顆翠綠色的韭菜水餃，<br />都經由SGS檢驗合格的綠藻粉調配而成。<br />鮮綠的外衣給您百分百的純正美味，<br />健康飽滿的內餡給您豐富的味蕾享受；<br />融合了美味與健康，絕對贏得您的青睞。
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0203辣味水餃.jpg" />
+            <p>辣味水餃</p>
+            <p>
+              可愛的元寶外型，<br />卻透著微紅的香辣口感；<br />獨家的泡菜與肉末的巧妙結合，<br />皮薄餡飽、辣而不膩！<br />辣的夠味，辣的好吃！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0204紅油抄手.jpg" />
+            <p>紅油抄手</p>
+            <p>
+              滑溜順口鮮Q抄手，<br />淋上獨家傳承調製、<br />麻中帶辣的紅辣油，<br />微麻的辣勁夾帶著香醇甘甜……<br />爆香純正的好料理讓您愛不擇手、一口接一口！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0205鮮蝦水餃.jpg" />
+            <p>鮮蝦水餃</p>
+            <p>
+              鮮蝦的肉質Q彈、外加上豬肉的絕香口感、<br />高麗菜的甜爽組成絕妙的搭配！<br />更襯托出肉餡的自然鮮美，<br />一口吃下，香濃鮮美的口感，<br />保證讓人回味無窮！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0206玉米水餃.jpg" />
+            <p>玉米水餃</p>
+            <p>
+              飽滿多汁玉米粒搭配溫體豬肉，<br />獨特香甜風味，大人小朋友的最愛喔~<br />且皆採用非基因改造玉米，<br />在店裡舉筷已是讚不絕口！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0207蔬菜水餃.jpg" />
+            <p>蔬菜水餃</p>
+            <p>
+              蔬菜水餃顆顆飽滿，清脆多汁紮實內餡！<br />皮薄Q軟，餡料豐富，滿滿蔬菜甜味
+              美味有層次！<br />煮水餃簡單快速上桌，又能讓您吃到滿滿蔬菜！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0208生水餃.jpg" />
+            <p>生水餃</p>
+            <p>
+              飽滿內餡，鮮嫩夠味!<br />手工現包的香Q口感，<br />飽實多汁不油膩，<br />買回家滾水現煮大快朵頤根本就是剛剛好，<br />不沾醬也很夠味!
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0209鮮蝦生水餃.jpg" />
+            <p>鮮蝦生水餃</p>
+            <p>
+              內餡鮮蝦飽實多汁，<br />豬肉鮮美香甜不膩，<br />在店裡舉筷已是讚不絕口！<br />帶回家品嚐更讓人垂涎不已！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0210牛肉湯餃.jpg" />
+            <p>牛肉湯餃</p>
+            <p>
+              濃郁的牛肉湯頭，<br />搭配上皮Q飽滿的招牌水餃，<br />香濃鮮甜的紅燒高湯巧妙地將水餃內餡完全混搭，<br />迷人的香氣讓人魅力無法擋！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0211酸辣湯餃.jpg" />
+            <p>酸辣湯餃</p>
+            <p>
+              料多味美、純正至極的酸辣湯底，<br />搭配肉餡飽滿、香甜美味的招牌水餃，<br />兩者合而為一，一口咬下，<br />又是道地山東酸辣口感，<br />濃濃水餃鮮味突然湧現……愈嚼愈有味！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0212咖哩雞水餃.jpg" />
+            <p>咖哩雞水餃</p>
+            <p>
+              咖哩雞是以雞肉、土豆、咖哩粉、胡蘿蔔、洋蔥<br />為主要食材製作而成的一道菜餚。<br />具備以鹹鮮口味為主，略帶甜辣，咖哩味濃厚的口感
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="noodles" class="dishPage">
+        <h1><span onclick="showMenu()">饕家美食</span>/麵類</h1>
+        <div class="dishes">
+          <div class="dish">
+            <img src="img/menu/0301牛肉麵(含6塊牛肉).jpg" />
+            <p>牛肉麵</p>
+            <p>
+              精選上選牛腱，配上祖傳藥材秘方，<br />慢火熬煮八小時，湯頭濃郁、<br />肉質鮮美、紮實嚼勁、<br />道地川味……令人意猶未盡！<br />麵條Q彈，口感滿分，是人氣超旺之經典美食！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0302牛肉乾拌麵.jpg" />
+            <p>牛肉乾拌麵</p>
+            <p>
+              麵條裡吸滿飽飽清甜濃郁、<br />溫潤微辣的牛肉高湯，<br />Q彈有勁、口感十足，<br />每一口咬下都能有鮮美甘甜的美味感動！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0303牛肉醬拌麵.jpg" />
+            <p>牛肉醬拌麵</p>
+            <p>
+              濃厚的牛肉醬與麵條的完美結合、<br />加上微辣口感的特製牛油，<br />香而不膩、辣而不嗆，<br />這樣的美味讓人回味無窮！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0304餛飩麵.jpg" />
+            <p>餛飩麵</p>
+            <p>
+              精選肥瘦適中的上等豬肉，<br />口感鮮嫩不油膩，<br />搭配晶瑩Q滑的薄皮，<br />及嚼勁十足的麵條，簡直絕配!
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0305肉燥拌麵.jpg" />
+            <p>肉燥拌麵</p>
+            <p>
+              採用新鮮豬肉加上濃郁滷汁，<br />長時間燉煮之後的美味多汁肉燥，<br />
+              搭配香滑彈性手工家常麵，<br />就是無法抗拒的古早味肉燥麵！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0306牛肉湯麵.jpg" />
+            <p>牛肉湯麵</p>
+            <p>
+              想喝口香醇的牛肉湯<br />又不想餐餐大魚大肉<br />牛肉湯麵絕對是最佳選擇<br />而且還附上一整顆滷蛋<br />除了飽足和營養之外<br />超值的價格<br />不讓您的荷包大失血喔
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0307酸辣麵.jpg" />
+            <p>酸辣麵</p>
+            <p>
+              原本就充滿層次口感的酸辣湯，<br />搭配香滑彈性手工麵條，<br />因此更增添了滿足感及飽足感
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0308川味擔擔麵.jpg" />
+            <p>川味擔擔麵</p>
+            <p>
+              淋上獨門哨子醬的川味擔擔麵，<br />香氣十足及豐富的層次，<br />微辣的口感，好吃的讓人停不下來！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0309塔香辣肉醬麵.jpg" />
+            <p>塔香辣肉醬麵</p>
+            <p>
+              塔香辣肉醬麵，色自然、鮮味美、<br />辣夠味、麵嚼香‧鮮甜味美、辣勁夠味、<br />塔香濃郁，讓你念念不忘的好味道！
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="soup" class="dishPage">
+        <h1><span onclick="showMenu()">饕家美食</span>/湯品</h1>
+        <div class="dishes">
+          <div class="dish">
+            <img src="img/menu/0401牛肉湯(含3塊牛肉).jpg" />
+            <p>牛肉湯</p>
+            <p>
+              新鮮尼加拉瓜上選牛腱足足三大塊<br />湯底是每天清晨用牛大骨細火慢熬<br />費時六小時才有的自然鮮甜<br />搭配本地每日現採新鮮蔬菜<br />再灑上滿滿蔥花<br />最適合犒賞天天辛苦工作的自己
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0402酸辣湯.jpg" />
+            <p>酸辣湯</p>
+            <p>
+              食材需細心切成絲狀，<br />再與濃郁的湯頭一起熬煮，<br />喝起來口感豐富，湯頭的鮮美酸辣並陳，<br />胡椒粉漂浮湯上，整碗色香味俱全，<br />真可說是一種平凡又美味的幸福
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0403台南虱目魚丸湯.jpg" />
+            <p>台南虱目魚丸湯</p>
+            <p>
+              使用新鮮虱目魚細膩調味製出的美味魚丸，<br />搭配豬骨熬成的鮮甜清湯，<br />鮮甜又美味。
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0404貢丸湯.jpg" />
+            <p>貢丸湯</p>
+            <p>
+              精選肥瘦適中的上等豬肉，<br />充分調味制出的美味貢丸，<br />搭配豬骨熬成的鮮甜清湯，爽口又好喝
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0405港式玉米濃湯.jpg" />
+            <p>港式玉米濃湯</p>
+            <p>
+              嚴選高品質的玉米食材，<br />豐富營養、口感滿分！<br />新鮮蛋花搭配濃郁香甜的味美高湯，<br />大人小孩都愛呷！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0406餛飩湯.jpg" />
+            <p>餛飩湯</p>
+            <p>
+              精選肥瘦適中的上等豬肉，<br />口感鮮嫩不油膩，搭配晶瑩Q滑的薄皮<br />及豬骨熬成的鮮甜清湯，<br />自然爽口又夠味!<br />簡單實在的好味道，<br />推薦您一起來品嘗
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="drink" class="dishPage">
+        <h1><span onclick="showMenu()">饕家美食</span>/飲品</h1>
+        <div class="dishes">
+          <div class="dish">
+            <img src="img/menu/0501豆漿.jpg" />
+            <p>豆漿</p>
+            <p>
+              本公司使用高優質<span style="color: red">非基因改造黃豆</span
+              ><br />濃‧醇‧健康，營養好喝的健康聖品<br />豆漿中富含植物性蛋白質、大豆異黃酮、大豆纖維、<br />維生素、鐵、鈣等物質，更有『綠色牛奶』的美名!<br />一天一杯豆漿，讓您活力多更多!!
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0502杏仁豆漿.jpg" />
+            <p>杏仁豆漿</p>
+            <p>
+              非食用時請冷藏於0~5℃，<br />以便提高您的賞味期限。<br />若有沉澱乃黃豆纖維屬正常現象，<br />飲用前請先搖晃數下，風味更佳!!
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0503紅茶豆漿.jpg" />
+            <p>紅茶豆漿</p>
+            <p>
+              天然麥香紅茶，與濃郁豆漿相互結合，<br />以獨門不傳的黃金比例，<br />讓東、西方的解渴飲品合而為一！<br />冰涼中帶有甜美滋味，值得您細細品味！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0504仙草茶.jpg" />
+            <p>仙草茶</p>
+            <p>
+              沁涼爽口、甜而不膩，<br />以自然仙草自行提煉<br />是炎炎夏日抗暑的最佳飲品！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0505仙草凍.jpg" />
+            <p>仙草凍</p>
+            <p>
+              仙草又稱【仙人草】<br />以膠質含量高而聞名，是自然涼補的常用藥材，<br />自古以來，仙草一直是夏日經常食用的消暑聖品。<br />茶餘飯後來杯清涼解膩的仙草凍，令人神清氣爽。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="side-dish" class="dishPage">
+        <h1><span onclick="showMenu()">饕家美食</span>/小菜</h1>
+        <div class="dishes">
+          <div class="dish">
+            <img src="img/menu/0601豬耳朵.jpg" />
+            <p>豬耳朵</p>
+            <p>
+              孕含豐富膠質、鈣質與蛋白質，<br />再用冰糖、八角等獨門香料醃製而成的豬耳朵，<br />又香又脆，是絕佳的開胃下酒菜！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0602豆干絲.jpg" />
+            <p>豆干絲</p>
+            <p>
+              清爽可口、紮實帶Q，含有豐富蛋白質，<br />配上爽脆的芹菜與紅蘿蔔絲，<br />是居家下酒的最佳良伴！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0603涼拌黃瓜.jpg" />
+            <p>涼拌黃瓜</p>
+            <p>
+              新鮮翠綠的鮮甜小黃瓜，<br />用著冰糖與蒜末醃製而成的清脆口感，<br />冰涼、爽口！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0604泡菜.jpg" />
+            <p>泡菜</p>
+            <p>
+              正宗台式泡菜<br />酸溜帶勁、堪稱一絕<br />每天清晨新鮮現採本土高麗菜<br />與本地辛勤菜農長期合作、嚴選最高品質<br />堅持每日兩趟新鮮配送<br />美味不打折
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0605滷蛋.jpg" />
+            <p>滷蛋</p>
+            <p>
+              上選雞蛋，經由獨特滷汁精釀烹製；<br />吃起來香滑有勁、Q彈夠味！蛋黃入味香濃、<br />唇齒留香，是小菜中不可或缺的營養補給唷！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0606皮蛋豆腐.jpg" />
+            <p>皮蛋豆腐</p>
+            <p>
+              嚴選高品質皮蛋<br />特殊香味、自然濃郁<br />非基因改造黃豆製成的豆腐<br />冰冰涼涼、口感滑嫩<br />淋上四海遊龍獨門醬汁<br />健康、美味同時擁有
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0607海帶絲.jpg" />
+            <p>海帶絲</p>
+            <p>
+              嚴選新鮮海帶絲，<br />配上獨家不傳醬料及新鮮蒜頭醃製而成，<br />健康爽脆又開胃！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0608涼拌木耳.jpg" />
+            <p>涼拌木耳</p>
+            <p>
+              黑木耳又可以稱作『雲耳』，<br />涼拌木耳口感脆脆，<br />酸酸甜甜又開胃！<br />低卡低熱量，當作零嘴來吃，<br />也不怕負擔太重！
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0609牛蒡絲.jpg" />
+            <p>牛蒡絲</p>
+            <p>
+              牛蒡絲含豐富纖維素及對人體健康有益的多醣體，<br />芝麻含有豐富的必需脂肪酸及維生素E的養生聖品，<br />適合在用餐後幫腸胃中和一下，<br />口感清脆的牛蒡絲拌入鹹甜酸醬汁調味，<br />飯前飯後必備的美味涼拌美食
+            </p>
+          </div>
+          <div class="dish">
+            <img src="img/menu/0610紅油筍片.jpg" />
+            <p>紅油筍片</p>
+            <p>
+              嚴選台灣在地新鮮高山竹筍，搭配香純的麻油製作而成，<br />取用新鮮嫩筍製成、口味甘香酸辣，且竹筍富含豐富纖維，<br />是不可或缺的家常小菜，不添加防腐劑！保留食物色原味，<br />口感絕佳，開胃健康好滋味～
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        /* page switch */
+        var menu = document.getElementsByClassName("menuPage"),
+          dishes = document.getElementsByClassName("dishPage");
+
+        function showMenu() {
+          menu[0].style.display = "block";
+          for (i = 0; i < dishes.length; i++) dishes[i].style.display = "none";
+        }
+
+        function showDishes(n) {
+          menu[0].style.display = "none";
+          for (i = 0; i < dishes.length; i++) {
+            dishes[i].style.display = n == i ? "block" : "none";
+          }
+        }
+      </script>
+    </section>
+
+    <section id="subsidery">
+      <h1 style="border-bottom: 2px solid black">門市查詢</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29233.771145557796!2d120.2914441!3d23.6680394!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stw!4v1624717859385!5m2!1sen!2stw"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section id="customer">
+      <div class="container">
+        <div class="index">
+          <div class="indexHead">客服專區</div>
+          <ul class="indexBody">
+            <li>
+              <a href="#joinFaq" onclick="showCustomer(0)">
+                <img src="img/button_before-160x43.png" />
+                <span>加盟FAQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#foodFaq" onclick="showCustomer(1)">
+                <img src="img/button_before-160x43.png" />
+                <span>食材FAQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onclick="showCustomer(2)">
+                <img src="img/button_before-160x43.png" />
+                <span>客服專線</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contents">
+          <div id="joinFaq" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png" />
+              <h2>加盟FAQ</h2>
+            </div>
             <div class="contentBody">
               <details>
                 <summary>如何才能加盟四海遊龍鍋貼專賣店呢？</summary>
                 <p>加盟流程</p>
                 <ol>
                   <li>資格審核。</li>
-                  <li>雙方拜訪約談：加盟契約、規章說明...雙方充份溝通加盟觀念。</li>
+                  <li>
+                    雙方拜訪約談：加盟契約、規章說明...雙方充份溝通加盟觀念。
+                  </li>
                   <li>閱讀了解加盟契約、規章 。</li>
                   <li>商圈立地調查評估、商圈經營保障。</li>
                   <li>簽訂加盟契約。</li>
@@ -815,105 +1107,159 @@
                 <p>或電洽加盟專線0800-22-44-66</p>
               </details>
               <details>
-                <summary>沒有做飲食經驗可以加盟四海游龍嗎？公司會幫忙找店面嗎？</summary>
-                <p>王先生您好～<br>不論有沒有餐飲經驗，都竭誠歡迎您加入我們四海遊龍鍋貼專賣店有20年的歷史有豐富的經營管理經驗，能提供加盟者最大的協助另提及公司是否會幫忙找店面本公司有專人專職協尋店面，請您放心</p>
+                <summary>
+                  沒有做飲食經驗可以加盟四海游龍嗎？公司會幫忙找店面嗎？
+                </summary>
+                <p>
+                  王先生您好～<br />不論有沒有餐飲經驗，都竭誠歡迎您加入我們四海遊龍鍋貼專賣店有20年的歷史有豐富的經營管理經驗，能提供加盟者最大的協助另提及公司是否會幫忙找店面本公司有專人專職協尋店面，請您放心
+                </p>
               </details>
               <details>
                 <summary>有開放對外加盟嗎?還是只有員工可以加盟呢？</summary>
-                <p>KEN您好～<br>本公司近期已開放對外加盟如您有意願加盟請您直接撥打免付費專線 0800-22-44-66 本公司將有專人與您連絡</p>
+                <p>
+                  KEN您好～<br />本公司近期已開放對外加盟如您有意願加盟請您直接撥打免付費專線
+                  0800-22-44-66 本公司將有專人與您連絡
+                </p>
               </details>
               <details>
                 <summary>請問加拿大可以加盟嗎？</summary>
-                <p>Josephine 您好!<br>目前本公司僅開放台灣加盟其他地區尚未進駐, 如您有意願加盟歡迎電洽加盟客服專線 0800-22-44-66 我們有專人為您服務，謝謝您的支持.</p>
+                <p>
+                  Josephine 您好!<br />目前本公司僅開放台灣加盟其他地區尚未進駐,
+                  如您有意願加盟歡迎電洽加盟客服專線 0800-22-44-66
+                  我們有專人為您服務，謝謝您的支持.
+                </p>
               </details>
               <details>
                 <summary>我住新竹市我想加盟</summary>
-                <p>王先生您好～<br>歡迎電洽加盟客服專線 0800-22-44-66 我們有專人為您服務，謝謝您的支持.</p>
+                <p>
+                  王先生您好～<br />歡迎電洽加盟客服專線 0800-22-44-66
+                  我們有專人為您服務，謝謝您的支持.
+                </p>
               </details>
               <details>
-                <summary>上週已e-mail過去了，新竹市可有地點可加盟，加盟細節？</summary>
-                <p>溫小姐您好~非常感激您的來信<br>新竹地區目前仍可加盟為解答您的疑問及加速作業時間, 請您來信留下您的聯絡方式或撥打客服專線 0800-22-44-66 我們有專人為您服務, 再次謝謝您的來信.</p>
+                <summary>
+                  上週已e-mail過去了，新竹市可有地點可加盟，加盟細節？
+                </summary>
+                <p>
+                  溫小姐您好~非常感激您的來信<br />新竹地區目前仍可加盟為解答您的疑問及加速作業時間,
+                  請您來信留下您的聯絡方式或撥打客服專線 0800-22-44-66
+                  我們有專人為您服務, 再次謝謝您的來信.
+                </p>
               </details>
               <details>
                 <summary>您好~~我有意願加盟，想了解加盟細節</summary>
-                <p>張小姐/先生您好~<br>謝謝您對本公司的支持, 有關加盟細節請撥打免費專線 0800-22-44-66 將有專人為您解說.</p>
+                <p>
+                  張小姐/先生您好~<br />謝謝您對本公司的支持,
+                  有關加盟細節請撥打免費專線 0800-22-44-66 將有專人為您解說.
+                </p>
               </details>
               <details>
                 <summary>我想在新竹縣竹北市加盟可以嗎？</summary>
-                <p>吳先生您好~非常感激您的來信<br>新竹地區目前仍可加盟, 為解答您的疑問及加速作業時間, 請您來信留下您的聯絡方式或撥打加盟專線 0972202966 我們有專人為您服務, 再次謝謝您的來信.</p>
+                <p>
+                  吳先生您好~非常感激您的來信<br />新竹地區目前仍可加盟,
+                  為解答您的疑問及加速作業時間,
+                  請您來信留下您的聯絡方式或撥打加盟專線 0972202966
+                  我們有專人為您服務, 再次謝謝您的來信.
+                </p>
               </details>
               <details>
-                <summary>您好！有對你們的產品蠻有興趣的，想要多了解您們一些加盟資訊!</summary>
-                <p>郭先生您好~非常感激您的來信<br>感謝您對本公司各項產品的支持, 有關加盟資訊可參考本網址 http://www.0800224466.com/ 或請撥打 0972202966 我們將有專人為您服務, 再次謝謝您的來信.</p>
+                <summary>
+                  您好！有對你們的產品蠻有興趣的，想要多了解您們一些加盟資訊!
+                </summary>
+                <p>
+                  郭先生您好~非常感激您的來信<br />感謝您對本公司各項產品的支持,
+                  有關加盟資訊可參考本網址 http://www.0800224466.com/ 或請撥打
+                  0972202966 我們將有專人為您服務, 再次謝謝您的來信.
+                </p>
               </details>
               <details>
                 <summary>我想在彰化市彰商彰中之間開加盟店可以嗎？</summary>
-                <p>黃先生您好~<br>四海遊龍鍋貼專賣店在彰化縣市目前僅五間分店, 您提及的區域只要對現有營業據點的影響不大, 我們都很歡迎您加入我們.</p>
+                <p>
+                  黃先生您好~<br />四海遊龍鍋貼專賣店在彰化縣市目前僅五間分店,
+                  您提及的區域只要對現有營業據點的影響不大,
+                  我們都很歡迎您加入我們.
+                </p>
               </details>
             </div>
-        </div>
-        <div id="foodFaq" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>食材FAQ</h2>
           </div>
-          <div class="contentBody">
-            <details>
-              <summary>你們的鍋貼和水餃包的肉都乾淨衛生嗎？</summary>
-              <p>非常感謝您來信對本公司之指教。<br>本公司肉品長期以來皆香里食品企業提供（通過農委會CAS優良食品及HACCP兩項認每天每日生產，每日配送（全程低溫保鮮）請您安心食用。</p>
-            </details>
+          <div id="foodFaq" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png" />
+              <h2>食材FAQ</h2>
+            </div>
+            <div class="contentBody">
+              <details>
+                <summary>你們的鍋貼和水餃包的肉都乾淨衛生嗎？</summary>
+                <p>
+                  非常感謝您來信對本公司之指教。<br />本公司肉品長期以來皆香里食品企業提供（通過農委會CAS優良食品及HACCP兩項認每天每日生產，每日配送（全程低溫保鮮）請您安心食用。
+                </p>
+              </details>
+            </div>
           </div>
-        </div>
-        <div id="contact" class="content">
-          <div class="contentHead">
-            <img src="img/about_yuloong.png">
-            <h2>客服專線</h2>
-          </div>
-          <div class="contentBody">
-            <h2>客服專線請您撥打</h2>
-            <h1>0800-22-44-66</h1>
+          <div id="contact" class="content">
+            <div class="contentHead">
+              <img src="img/about_yuloong.png" />
+              <h2>客服專線</h2>
+            </div>
+            <div class="contentBody">
+              <h2>客服專線請您撥打</h2>
+              <h1>0800-22-44-66</h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <script>
+        var customerContents = document
+          .getElementById("customer")
+          .getElementsByClassName("content");
+
+        showCustomer(0);
+
+        function showCustomer(n) {
+          for (i = 0; i < customerContents.length; i++) {
+            customerContents[i].style.display = n == i ? "block" : "none";
+          }
+        }
+
+        let ds = [...document.querySelectorAll("details")];
+
+        ds.forEach((d) =>
+          d.addEventListener(
+            "click",
+            (e) =>
+              e.shiftKey ||
+              ds.filter((i) => i != d).forEach((i) => i.removeAttribute("open"))
+          )
+        );
+      </script>
+    </section>
+
     <script>
-      var customerContents = document.getElementById("customer").  getElementsByClassName("content");
-  
-      showCustomer(0);
-  
-      function showCustomer(n) {
-        for (i = 0; i < customerContents.length; i++) {
-          customerContents[i].style.display = (n == i) ? "block" :   "none";
+      var sections = document.getElementsByTagName("section");
+
+      displaySection(3);
+
+      function displaySection(n) {
+        for (i = 0; i < sections.length; i++) {
+          sections[i].style.display = n == i ? "block" : "none";
         }
       }
-  
-      let ds = [...document.querySelectorAll('details')];
-  
-      ds.forEach(d=>d.addEventListener('click',
-        e=>e.shiftKey||ds.filter(i=>i!=d).forEach(i=>i.removeAttribute  ('open'))));
     </script>
-  </section>
 
-  <script>
-    var sections = document.getElementsByTagName("section");
+    <footer>
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        RYCloud Technology Corp. All Rights Reserved.
+      </p>
+    </footer>
 
-    displaySection(3);
-
-    function displaySection(n) {
-      for (i = 0; i < sections.length; i++) {
-        sections[i].style.display = (n == i) ? "block" : "none";
-      }
-    }
-  </script>
-
-  <footer>
-    <p>Copyright &copy;<script>document.write(new Date().getFullYear())</script> RYCloud Technology Corp. All Rights Reserved.</p>
-  </footer>
-
-  <div class="language">
-    <a href="#" class="world">
-      <img src="img/language.svg">
-    </a>
-  </div>
-</body>
+    <div class="language">
+      <a href="#" class="world">
+        <img src="img/language.svg" />
+      </a>
+    </div>
+  </body>
 </html>

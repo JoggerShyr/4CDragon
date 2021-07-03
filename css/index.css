@@ -183,7 +183,7 @@ nav ul a:hover {
 }
 
 .icon-bar .member {
-  background: #3B5998;
+  background: #3b5998;
 }
 
 .icon-bar .shopping {
@@ -429,7 +429,7 @@ nav ul a:hover {
           box-shadow: 5px -5px 10px #095d2c;
   width: auto;
   max-width: 250px;
-  padding: .5em;
+  padding: 0.5em;
   text-align: center;
 }
 
@@ -448,7 +448,7 @@ nav ul a:hover {
   text-align: left;
   font-size: smaller;
   border-left: 3px solid #095d2c;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 footer {
